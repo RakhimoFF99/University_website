@@ -1,9 +1,11 @@
 <template>
 <div>
-    <div class="background-image">
-    <div class="main-logo col-md-6 mx-auto"></div>
-    <div  ref="nav" class="navbar hide  d-flex">
-        <div class="navbar-list flex-column">
+    <div class="background-image" :style="height">
+    <div v-if="color" class="color"></div>
+    <div v-if="ShowMainLogo" class="main-logo col-md-6 mx-auto"></div>
+    <div  class="title"><h1>{{title}}</h1></div>
+    <div v-if="ShowNavbar" ref="nav" class="navbar hide  d-flex">
+        <div class="navbar-list">
           <div  @click="toogleNavbar" class="nav-item d-flex">
           <img src="@/assets/icons/fi_align-justify.svg"  class="mb-1" alt="menyu">
           <div  class="ml-2" style="font-weight:600">Menyu</div>
@@ -17,9 +19,17 @@
             <img src="@/assets/icons/fi_calendar.svg" alt="calendar">
             <div class="ml-2" style="font-weight:600">Yangiliklar</div>
             </div>
-             <div  @click="toogleNavbar" class="nav-item d-flex ">
-            
-             <div class="ml-2" style="font-weight:600">Fakultetlar</div>
+             <div  @click="toogleNavbar" class="nav-item smaller-nav d-flex ">
+             <div class="ml-2" style="font-weight:600">Hemis</div>
+             
+             </div>
+               <div  @click="toogleNavbar" class="nav-item smaller-nav d-flex ">
+             <div class="ml-2" style="font-weight:600">Moodle</div>
+             
+             </div>
+               <div  @click="toogleNavbar" class="nav-item smaller-nav d-flex ">
+             <div class="ml-2" style="font-weight:600">Qabulxona</div>
+             
              </div>
         </div>
         
@@ -37,11 +47,13 @@
     export default {
         name:"Navbar",
         data: () => ({
-            
+         
         }),
+        props:["color","ShowNavbar","ShowMainLogo","height",'title'],
         methods: {
             toogleNavbar () {
                this.$refs.nav.classList.toggle('hide')
+
             }
         }
 
@@ -49,21 +61,45 @@
 </script>
 
 <style scoped>
+
   .background-image {
-    width: 100%;
-    height: 100vh;
+    position: relative;
+    width: 100%;    
     background : url('@/assets/images/mainBodyImage.png') no-repeat center ;
     background-attachment: fixed;
     background-size: cover;
-    overflow: hidden;
+    }
+    .color {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: #1c2e51cc
+;
     }
     .navbar { 
         display: flex;
         margin: 0;
         padding: 0;
+        align-items: flex-start;
         justify-content: flex-end;
         transition: transform 0.7s ease;
         position: relative;
+    }
+  .title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      color: white;
+      left: 0;
+      bottom: 0;
+      right: 0;
+  }
+
+    .title h1 {
+        font-weight: 700;
+        margin: 0 20px;
     }
     
     .hide {
@@ -71,13 +107,12 @@
     }
     
     .navbar-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
         color: white;
         margin-top: 50px;
-        display: flex;
-        align-self: start;
         width: 220px;
-    
-
     }
    
     .navbar-box {
@@ -88,13 +123,29 @@
     }
 
     .nav-item {
-       
+        width: 100%;
         cursor: pointer;
         margin-top: 10px;
         padding: 10px 10px;
         background-color: #1C2E51;
         transition: background  0.5s ease;
-;
+    }
+    .smaller-nav {
+        position: relative;;
+        color: black;
+        width: 80%;
+        background-color: white;
+    }
+    .smaller-nav::before{
+        content: "";
+        width: 102%;
+        top: 4px;
+        left: -4px;
+        background-color:#3DB166;
+        height: 100%;
+        position: absolute;
+        z-index: -5;
+        
     }
      .nav-item:hover {
     color: black;
@@ -102,13 +153,11 @@
     }
     
     .main-logo {
-    overflow: visible;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 60;
     background: url('@/assets/images/main-logo.png') no-repeat;
     background-size: contain;
     background-position: center;

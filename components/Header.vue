@@ -33,7 +33,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 py-2">
+        <div class="col-md-4 py-1">
           <div class="header-right">
             <img
               class="icon-style"
@@ -83,7 +83,7 @@ export default {
 }
 .header-container {
   color: white;
-  height: 88px;
+  height: 75px;
 }
 .header-right {
   display: flex;

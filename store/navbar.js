@@ -1,7 +1,6 @@
-
 //store
 export const state = () => ({
-
+counter: 0
 })
 
 //actions
@@ -13,6 +12,6 @@ export const mutations = {
 
 }
 //getters
-export const getters = {
-
+export const getters = (state) => {
+    return state
 }

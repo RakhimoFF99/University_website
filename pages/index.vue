@@ -1,5 +1,6 @@
 <template>
   <div>
+      <Navbar :ShowNavbar="isShowNavbar" :ShowMainLogo="isShowMainLogo" :color="navColor" :height="navHeight"  />
     <div class="container">
       <div class="image">
         <div class="image-border">
@@ -15,9 +16,10 @@
     </div>
     <div class="container">
       <div class="tab-bar">
-        <div class="news">Yangiliklar</div>
-        <div class="events">Tadbirlar</div>
-        <div class="announcement">E'lonlar</div>
+        <div class="news-type">Yangiliklar</div>
+        <div class="news-type">Tadbirlar</div>
+        <div class="news-type">E'lonlar</div>
+          <div class="news-type">Foydali</div>
       </div>
     </div>
 
@@ -123,16 +125,25 @@
 
 <script> 
  import {mapState} from 'vuex'
+ import Navbar from '../components/Navbar.vue'
 export default {
+  components: {
+    Navbar
+  },
   data() {
     return {
-      ...mapState
+      navColor:false,
+      isShowMainLogo:true,
+      isShowNavbar:true,
+      title : "",
+       navHeight: {
+        height:"100vh"
+      },
+
     }
   },
-
-  mounted () {
-    console.log(this.$store.state)
-  }
+ 
+ 
 }
 </script>
 
@@ -198,13 +209,14 @@ export default {
   width: 700px;
   height: 300px;
   border-radius: 16px;
-  border: 4px solid #85657c;
+  border: 4px solid #1C2E51;
 }
 
 .image-detail {
   word-break: break-word;
   font-weight: 500;
   display: flex;
+  color: white;
   align-items: flex-end;
   justify-content: center;
   flex-direction: column;
@@ -215,7 +227,7 @@ export default {
   min-height: 200px;
   padding: 20px 30px 20px 20px;
   border-radius: 16px;
-  background-color: #d7c7d2;
+  background-color: #1C2E51;
   box-shadow: 0 4px 10px -2px rgb(215, 199, 210);
 }
 
@@ -249,39 +261,20 @@ export default {
 .tab-bar {
   display: flex;
 }
-.news {
+
+.news-type {
   border: 1px solid #efebee;
   padding: 5px 25px;
   font-weight: 500;
   cursor: pointer;
   transition: background 0.4s ease;
 }
-.events {
-  border: 1px solid #efebee;
-  padding: 5px 25px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background 0.4s ease;
-}
-.announcement {
-  border: 1px solid #efebee;
-  padding: 5px 25px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background 0.8s ease;
-}
-.news:hover {
+
+.news-type:hover {
   color: white;
-  background-color: #85657c;
+  background-color: #1C2E51;
 }
-.events:hover {
-  color: white;
-  background-color: #85657c;
-}
-.announcement:hover {
-  color: white;
-  background-color: #85657c;
-}
+
 .news-card {
   border-radius: 30px;
   margin: 4rem 1rem;

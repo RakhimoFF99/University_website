@@ -3,7 +3,7 @@
   
     <section>
       <div class="container">
-        <div class="row  brands mb-2 mt-2 d-flex justify-content-around">
+        <div class="row brands my-3 d-flex justify-content-around">
           <img src="@/assets/images/image-ziyonet.png" alt="ziyonet" />
           <img src="@/assets/images/image-mygov.png" alt="mygov" />
           <img src="@/assets/images/image-emblem.png" alt="emblem" />
@@ -59,9 +59,16 @@ export default {
 </script>
 
 <style scoped>
+
 .brands img {
+  filter: grayscale(100%);
+  cursor: pointer;
   margin: 1rem 1rem 2rem 1rem;
-  width: 180px;
+  width: 120px;
+}
+.brands img:hover{
+  filter: grayscale(0);
+
 }
 @media only screen and (max-width: 800px) {
   .footer-logo {
