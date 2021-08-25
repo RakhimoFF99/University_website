@@ -83,7 +83,7 @@ export default {
 }
 .header-container {
   color: white;
-  height: 88px;
+  height: 80px;
 }
 .header-right {
   display: flex;

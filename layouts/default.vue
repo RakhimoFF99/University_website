@@ -1,7 +1,6 @@
 <template>
 <div>
   <Header :color="headerBackground" />
-  <Navbar />
   <Nuxt />
   <Footer />
   </div>
@@ -25,7 +24,7 @@ export default {
   },
   components:{
     Header,
-    Navbar,
+
     Footer
   
   }
