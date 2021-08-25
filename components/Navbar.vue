@@ -68,6 +68,7 @@
     background : url('@/assets/images/mainBodyImage.png') no-repeat center ;
     background-attachment: fixed;
     background-size: cover;
+    overflow:hidden
     }
     .color {
         width: 100%;
