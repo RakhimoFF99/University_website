@@ -1,14 +1,20 @@
 <template>
   <div class="header-container" :style="color">
     <div class="container">
-      <div class="row  justify-content-between py-2">
+      <div class="row justify-content-between py-2">
         <div class="col-md-8">
           <div class="header-left d-flex">
             <img src="@/assets/icons/logo1.png" alt="logo" />
-            
 
             <div
-              class="col-md-6  d-flex justifty-content-between align-items-center ml-4 test"
+              class="
+                col-md-6
+                d-flex
+                justifty-content-between
+                align-items-center
+                ml-4
+                test
+              "
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -27,8 +33,12 @@
                   class="icon-style"
                 />
               </svg>
-              
-              <img src="@/assets/icons/uzb-emblem.png" alt="emblem" />
+
+              <img
+                class="p-3"
+                src="@/assets/icons/uzb-emblem.png"
+                alt="emblem"
+              />
               <img src="@/assets/icons/fi_music.png" alt="music" />
             </div>
           </div>
@@ -60,20 +70,17 @@
         </div>
       </div>
     </div>
-
   </div>
 </template>
 
 <script>
 export default {
-
-  name: 'Header',
-  props: ['color']
-}
+  name: "Header",
+  props: ["color"],
+};
 </script>
 
 <style scoped>
-
 .icon-style {
   transition: background 0.3s ease;
   cursor: pointer;
