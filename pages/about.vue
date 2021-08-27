@@ -1,6 +1,6 @@
 <template>
     <div>
-     <navbar :ShowNavbar="isShowNavbar" :ShowMainLogo="isShowMainLogo" :color="navColor" :height="navHeight" :title="title"/>
+     <navbar :color="navColor" :height="navHeight" :title="title"/>
     <div class="container mt-5">
     <div class="row">
     <div class="col-md-8 mt-3">
@@ -71,8 +71,6 @@ import Navbar from '../components/Navbar.vue'
   data () {
     return {
       navColor:true,
-      isShowMainLogo:false,
-      isShowNavbar:false,
       navHeight: {
         height:"70vh"
       },
