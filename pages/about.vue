@@ -1,33 +1,31 @@
 <template>
   <div>
-    <navbar
-      :ShowNavbar="isShowNavbar"
-      :ShowMainLogo="isShowMainLogo"
-      :color="navColor"
-      :height="navHeight"
-      :title="title"
-    />
-
     <div>
-      <navbar :color="navColor" :height="navHeight" :title="title" />
-
-      <div class="row">
-        <div class="col-md-8 mt-3">
-          {{ $t("aboutlang") }}
-          <br /><br />
-          <p>
-            {{ $t("aboutlang2") }}
-          </p>
-        </div>
-        <div
-          style="height: 300px"
-          class="col-md-4 d-flex justify-content-center"
-        >
-          <img src="@/assets/images/about-image1.png" alt="about-image" />
+      <navbar
+        :ShowNavbar="isShowNavbar"
+        :ShowMainLogo="isShowMainLogo"
+        :color="navColor"
+        :height="navHeight"
+        :title="title"
+      />
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-md-8 mt-3">
+            {{ $t("aboutlang") }}
+            <br /><br />
+            <p>
+              {{ $t("aboutlang2") }}
+            </p>
+          </div>
+          <div
+            style="height: 300px"
+            class="col-md-4 d-flex justify-content-center"
+          >
+            <img src="@/assets/images/about-image1.png" alt="about-image" />
+          </div>
         </div>
       </div>
     </div>
-
     <div class="container mt-5">
       <div class="row">
         <div
@@ -77,6 +75,7 @@ export default {
       isShowMainLogo: false,
       isShowNavbar: false,
       isShowNews: true,
+      title1: false,
       navHeight: {
         height: "30vh",
       },

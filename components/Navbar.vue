@@ -4,7 +4,10 @@
       <div v-if="color" class="color"></div>
       <div v-if="ShowMainLogo" class="main-logo col-md-6 mx-auto"></div>
       <div class="title">
-        <h1>{{ title }}</h1>
+        <h1>
+          {{ title }} <br />
+          {{ title1 }}
+        </h1>
       </div>
       <div v-if="ShowNavbar" ref="nav" class="navbar hide d-flex">
         <div class="navbar-list">
@@ -46,7 +49,7 @@
 export default {
   name: "Navbar",
   data: () => ({}),
-  props: ["color", "ShowNavbar", "ShowMainLogo", "height", "title"],
+  props: ["color", "ShowNavbar", "ShowMainLogo", "height", "title", "title1"],
   methods: {
     toogleNavbar() {
       this.$refs.nav.classList.toggle("hide");

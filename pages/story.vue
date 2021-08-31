@@ -11,7 +11,7 @@
     <div class="container">
       <div class="text mt-5">
         <h1>
-          <strong> Oliy ta'lim muassasining tarixi </strong>
+          <strong> {{ $t("storyTitle") }} </strong>
         </h1>
       </div>
       <div class="row mt-3">
@@ -27,34 +27,11 @@
         </div>
         <div class="col-md-3 pl-5 text">
           <p>
-            18-19 mart kunlari umumjahon chempioni xayriya xayriya chempioni
-            milliy a'zosi-professor -Onituville va siyosiy klarig talabasi Birri
-            Igrikan geografik jihatdan hasharotlar bilan etika bilan
-            shug'ullanadilar. Zhumladan uch-tepa tumanidov bog'lar emas 1200
-            tug'ilgan pravoslav yoki professor-ankituvchillar qabul ishtirok
-            etishgan bulsa, uch-tepa Tumat Alp 4-uida tashkil ethylord 500
-            nafardan orthodan Tallar va professor-onituvchilar, universitit Bosh
-            va 1500 odamlar bor ishtirok hududida men uch-tepa Nava Nava Nawazy
-            Farolsky yagiiny yazyn Hamadoni-siyosatchi va
-            professor-onituvchilar, qarash uchun ish bu erda. Ushbu
-            seminar-yig'ilish loyiha doirasida ishlab chiqildi: Sug'd viloyatini
-            ijtimoiy-iqtisodiy rivojlantirishni rejalashtirish, monitoring va
-            tahlil qilish;
+            {{ $t("story") }}
           </p>
         </div>
         <div class="image-content">
-          18-19 mart kunlari umumjahon chempioni xayriya xayriya chempioni
-          milliy a'zosi-professor-Onituville va siyosiy klarig talabasi Birri
-          Igrikan geografik jihatdan hasharotlar bilan etika bilan
-          shug'ullanadilar. Zhumladan uch-tepa tumanidov bog'lar emas 1200
-          tug'ilgan pravoslav yoki professor- ankituvchillar qabul ishtirok
-          etishgan bulsa, uch-tepa Tumat Alp 4-uida tashkil ethylord 500
-          nafardan orthodan Tallar va professor-onituvchilar, universitit Bosh
-          va 1500 odamlar bor ishtirok hududida men uch-tepa Nava Nava Nawazy
-          Farolsky yagiiny yazyn Hamadoni-siyosatchi va professor- onituvchilar,
-          qarash uchun ish bu erda. Ushbu seminar-yig'ilish loyiha doirasida
-          ishlab chiqildi: Sug'd viloyatini ijtimoiy-iqtisodiy rivojlantirishni
-          rejalashtirish,monitoring va tahlil qilish;
+          {{ $t("bottomText") }}
         </div>
       </div>
       <div class="news-form">

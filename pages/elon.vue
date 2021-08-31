@@ -13,7 +13,7 @@
           {{ $t("e'lon") }}
           <br />
           <br />
-          {{ $t("e'lon2") }}
+          {{ $t("e'lon1") }}
         </div>
         <div class="col-md-12 mt-3 image">
           <img src="../assets/news/image25.png" alt="news" />
