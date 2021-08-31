@@ -7,7 +7,10 @@
       :height="navHeight"
       :title="title"
     />
-    <div class="container mt-5">
+
+    <div>
+      <navbar :color="navColor" :height="navHeight" :title="title" />
+
       <div class="row">
         <div class="col-md-8 mt-3">
           {{ $t("aboutlang") }}
@@ -73,6 +76,7 @@ export default {
       navColor: true,
       isShowMainLogo: false,
       isShowNavbar: false,
+      isShowNews: true,
       navHeight: {
         height: "30vh",
       },
@@ -82,5 +86,5 @@ export default {
 };
 </script>
 
-<style  scoped>
+<style scoped>
 </style>
