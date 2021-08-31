@@ -37,6 +37,10 @@ export default {
     'bootstrap-vue/nuxt',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    // https://www.npmjs.com/package/@nuxtjs/i18n
+
+    '@nuxtjs/i18n',
+
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -44,5 +48,26 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+  // i18n Configurations
+  i18n: {
+    locales: [
+      {
+        code: "uz",
+        file: "uz.js"
+      },
+      {
+        code: "ru",
+        file: "ru.js"
+      },
+      {
+        code: "en",
+        file: "en.js"
+      }
+    ],
+    lazy: true,
+    langDir: "lang/",
+    strategy: "prefix_except_default",
+    defaultLocale: "uz"
   }
 }

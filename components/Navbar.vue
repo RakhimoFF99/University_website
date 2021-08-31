@@ -14,25 +14,25 @@
               class="mb-1"
               alt="menyu"
             />
-            <div class="ml-2" style="font-weight: 600">Menyu</div>
+            <div class="ml-2" style="font-weight: 600">{{ $t("hlang") }}</div>
           </div>
 
           <div @click="toogleNavbar" class="nav-item d-flex">
             <img src="@/assets/icons/fi_search.svg" alt="search" />
-            <div class="ml-2" style="font-weight: 600">Search</div>
+            <div class="ml-2" style="font-weight: 600">{{ $t("hlang1") }}</div>
           </div>
           <div @click="toogleNavbar" class="nav-item d-flex">
             <img src="@/assets/icons/fi_calendar.svg" alt="calendar" />
-            <div class="ml-2" style="font-weight: 600">Yangiliklar</div>
+            <div class="ml-2" style="font-weight: 600">{{ $t("hlang2") }}</div>
           </div>
           <div @click="toogleNavbar" class="nav-item smaller-nav d-flex">
-            <div class="ml-2" style="font-weight: 600">Hemis</div>
+            <div class="ml-2" style="font-weight: 600">{{ $t("hlang3") }}</div>
           </div>
           <div @click="toogleNavbar" class="nav-item smaller-nav d-flex">
-            <div class="ml-2" style="font-weight: 600">Moodle</div>
+            <div class="ml-2" style="font-weight: 600">{{ $t("hlang4") }}</div>
           </div>
           <div @click="toogleNavbar" class="nav-item smaller-nav d-flex">
-            <div class="ml-2" style="font-weight: 600">Qabulxona</div>
+            <div class="ml-2" style="font-weight: 600">{{ $t("hlang5") }}</div>
           </div>
         </div>
 
@@ -90,50 +90,6 @@ export default {
   bottom: 0;
   right: 0;
 }
-
-<<<<<<< HEAD
-.title h1 {
-  font-weight: 700;
-  margin: 0 20px;
-}
-=======
-  .background-image {
-    position: relative;
-    width: 100%;    
-    background : url('@/assets/images/mainBodyImage.png') no-repeat center ;
-    background-attachment: fixed;
-    background-size: cover;
-    overflow:hidden
-    }
-    .color {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        background-color: #1c2e51cc
-;
-    }
-    .navbar { 
-        display: flex;
-        margin: 0;
-        padding: 0;
-        align-items: flex-start;
-        justify-content: flex-end;
-        transition: transform 0.7s ease;
-        position: relative;
-    }
-  .title {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      top: 0;
-      color: white;
-      left: 0;
-      bottom: 0;
-      right: 0;
-  }
->>>>>>> e9c9d13425b7e5070db60a3dc19b93f3c3545cc2
-
 .hide {
   transform: translateX(300px);
 }
@@ -192,6 +148,13 @@ export default {
   background: url("@/assets/images/main-logo.png") no-repeat;
   background-size: contain;
   background-position: center;
+}
+
+#nav ul.sub-nav {
+  display: none;
+}
+#nav ul.visible {
+  display: block;
 }
 
 @media only screen and (max-width: 800px) {

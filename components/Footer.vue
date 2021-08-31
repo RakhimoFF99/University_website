@@ -21,39 +21,23 @@
                 src="@/assets/images/footer-logo.png"
                 alt="footerLogo"
               />
-              <p class="text-white mt-2">OKS.UZ - create-site</p>
             </div>
             <div class="col-md-2 text-white mb-1">
-              Royxatga o`tganglar 4 Foydalanuvchilar 1 So'nggi yangilanish:
-              2021-08-12
+              {{ $t("flang2") }}
             </div>
             <div class="col-md-3 mb-2">
-              Matnda xato ko'rsangiz? Uni belgilab Ctrl + Enter ni bosing
-              <p class="mt-2 h5">Sayt xaritasi</p>
+              {{ $t("flang3") }}
+              <p class="mt-2 h5">{{ $t("flang4") }}</p>
             </div>
             <div class="col-md-2">
-              Ishonch telefoni:
+              {{ $t("flang5") }}
               <p>+99897 529-99-51</p>
-              <div class="social-networks">Ijtimoiy tarmoqlar</div>
+              <div class="social-networks">{{ $t("flang6") }}</div>
               <div class="icons mt-4">
-                <span class="pl-3 ps-3">
-                  <svg
-                    width="13"
-                    height="22"
-                    viewBox="0 0 13 22"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12 0.764648H9C7.67392 0.764648 6.40215 1.29143 5.46447 2.22912C4.52678 3.1668 4 4.43857 4 5.76465V8.76465H1V12.7646H4V20.7646H8V12.7646H11L12 8.76465H8V5.76465C8 5.49943 8.10536 5.24508 8.29289 5.05754C8.48043 4.87001 8.73478 4.76465 9 4.76465H12V0.764648Z"
-                      stroke="#37363C"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+                <span class="fasebook">
+                  <img src="../assets/icons/Vector.png" alt="fasebook" />
                 </span>
-                <span>
+                <span class="instagram">
                   <svg
                     width="22"
                     height="23"
@@ -96,10 +80,10 @@
                     </defs>
                   </svg>
                 </span>
-                <span>
+                <span class="telegram">
                   <img src="@/assets/icons/telegram.png" alt="" />
                 </span>
-                <span>
+                <span class="youtube">
                   <svg
                     width="24"
                     height="25"
@@ -126,13 +110,9 @@
             </div>
           </div>
         </div>
-
-        <div></div>
       </div>
       <hr style="background: white" />
-      <div class="container py-2">
-        © 2015 O`zDJTU - O`zbekiston Davlat JAHON TILLARI UNIVERSITETI
-      </div>
+      <div class="container py-2">© 2015 {{ $t("flang7") }}</div>
     </section>
   </div>
 </template>
@@ -144,25 +124,45 @@ export default {
 </script>
 
 <style scoped>
+.footer {
+  overflow: hidden;
+}
 .brands img {
   filter: grayscale(100%);
   cursor: pointer;
   margin: 1rem 1rem 2rem 1rem;
-  width: 120px;
+  width: 180px;
+  height: 110px;
 }
 .brands img:hover {
   filter: grayscale(0);
 }
 .icons {
-  width: 150%;
+  width: 120%;
+  padding-left: 10px;
 }
 .icons span {
   background-color: #fff;
   border-radius: 50%;
-  padding: 10px;
+  padding: 8px;
 }
-.icons span svg {
-  padding-bottom: 4px;
+.icons span img,
+svg {
+  padding-bottom: 5px;
+}
+.fasebook {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.fasebook img {
+  padding: 0 5px 0 5px;
+  width: 22px;
+  height: 22px;
+}
+.telegram img {
+  width: 20px;
+  height: 24px;
 }
 @media only screen and (max-width: 800px) {
   .footer-logo {
