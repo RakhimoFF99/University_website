@@ -12,8 +12,8 @@
           <div class="slide-right"></div>
           <div class="btn-detail">Batafsil malumot</div>
         </div>
-      </div>
-    </div>
+      </div>   
+    </div> 
     <div class="container">
       <div class="tab-bar">
         <div class="news-type">Yangiliklar</div>
@@ -124,7 +124,6 @@
 </template>
 
 <script> 
- import {mapState} from 'vuex'
  import Navbar from '../components/Navbar.vue'
 export default {
   components: {
@@ -142,6 +141,9 @@ export default {
 
     }
   },
+  mounted () {
+    console.log(this.$store.state.counter)
+  }
  
  
 }
@@ -282,7 +284,6 @@ export default {
 }
 .news-body {
   width: 450px;
-
   height: 300px;
   background-image: url('@/assets/images/image-students-news.png');
   background-repeat: no-repeat;

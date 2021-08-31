@@ -1,7 +1,7 @@
 
 //store
 export const state = () => ({
-
+counter:0
 })
 
 //actions

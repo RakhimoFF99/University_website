@@ -77,15 +77,7 @@
         background-color: #1c2e51cc
 ;
     }
-    .navbar { 
-        display: flex;
-        margin: 0;
-        padding: 0;
-        align-items: flex-start;
-        justify-content: flex-end;
-        transition: transform 0.7s ease;
-        position: relative;
-    }
+  
   .title {
       display: flex;
       justify-content: center;
@@ -106,6 +98,15 @@
     .hide {
             transform: translateX(300px);
     }
+      .navbar { 
+        display: flex;
+        margin: 0;
+        padding: 0;
+        align-items: flex-start;
+        justify-content: flex-end;
+        transition: transform 0.7s ease;
+        position: relative;
+    }
     
     .navbar-list {
         display: flex;
@@ -118,7 +119,6 @@
    
     .navbar-box {
     width: 300px;
-   
     height: 100vh;
     background-color: #000000e0;
     }
