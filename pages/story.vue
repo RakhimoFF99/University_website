@@ -7,7 +7,22 @@
       :height="navHeight"
       :title="title"
     />
-
+    <div class="icon">
+      <nuxt-link style="color: black" to="/">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="currentColor"
+          class="bi bi-justify"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"
+          /></svg
+      ></nuxt-link>
+    </div>
     <div class="container">
       <div class="text mt-5">
         <h1>
@@ -73,6 +88,18 @@ export default {
 }
 .news-form button {
   padding: 10px 40px;
+}
+.icon {
+  position: absolute;
+  right: 0;
+  width: 50px;
+  height: 52px;
+  background-color: #f2f2f2;
+}
+.icon svg {
+  position: relative;
+  left: 15px;
+  top: 10px;
 }
 
 @media only screen and (max-width: 600px) {
