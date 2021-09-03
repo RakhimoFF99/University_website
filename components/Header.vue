@@ -1,78 +1,96 @@
 <template>
   <div class="header-container" :style="color">
     <div class="container">
-      <div class="row  justify-content-between py-2">
+      <div class="row justify-content-between py-2">
         <div class="col-md-8">
           <div class="header-left d-flex">
             <img src="@/assets/icons/logo1.png" alt="logo" />
-            
 
             <div
-              class="col-md-6  d-flex justifty-content-between align-items-center ml-4 test"
+              class="
+                col-md-6
+                d-flex
+                justifty-content-between
+                align-items-center
+                ml-4
+                test
+              "
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill=""
-                background="red"
-              >
-                <path
-                  d="M21.9999 16.92V19.92C22.0011 20.1985 21.944 20.4741 21.8324 20.7293C21.7209 20.9845 21.5572 21.2136 21.352 21.4018C21.1468 21.5901 20.9045 21.7335 20.6407 21.8227C20.3769 21.9119 20.0973 21.945 19.8199 21.92C16.7428 21.5856 13.7869 20.5341 11.1899 18.85C8.77376 17.3146 6.72527 15.2661 5.18993 12.85C3.49991 10.2412 2.44818 7.27097 2.11993 4.17997C2.09494 3.90344 2.12781 3.62474 2.21643 3.3616C2.30506 3.09846 2.4475 2.85666 2.6347 2.6516C2.82189 2.44653 3.04974 2.28268 3.30372 2.1705C3.55771 2.05831 3.83227 2.00024 4.10993 1.99997H7.10993C7.59524 1.9952 8.06572 2.16705 8.43369 2.48351C8.80166 2.79996 9.04201 3.23942 9.10993 3.71997C9.23656 4.68004 9.47138 5.6227 9.80993 6.52997C9.94448 6.8879 9.9736 7.27689 9.89384 7.65086C9.81408 8.02482 9.6288 8.36809 9.35993 8.63998L8.08993 9.90997C9.51349 12.4135 11.5864 14.4864 14.0899 15.91L15.3599 14.64C15.6318 14.3711 15.9751 14.1858 16.3491 14.1061C16.723 14.0263 17.112 14.0554 17.4699 14.19C18.3772 14.5285 19.3199 14.7634 20.2799 14.89C20.7657 14.9585 21.2093 15.2032 21.5265 15.5775C21.8436 15.9518 22.0121 16.4296 21.9999 16.92Z"
-                  stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="icon-style"
-                />
-              </svg>
-              
-              <img src="@/assets/icons/uzb-emblem.png" alt="emblem" />
+              <img src="@/assets/icons/image 2.png" alt="flag" />
+              <img
+                class="p-3"
+                src="@/assets/icons/uzb-emblem.png"
+                alt="emblem"
+              />
               <img src="@/assets/icons/fi_music.png" alt="music" />
             </div>
           </div>
         </div>
         <div class="col-md-4 py-1">
           <div class="header-right">
-            <img
-              class="icon-style"
-              src="@/assets/icons/fi_message-square.png"
-              alt="message-icon"
-            />
-            <img
-              class="icon-style"
-              src="@/assets/icons/fi_smartphone.png"
-              alt="phone"
-            />
             <img class="icon-style" src="@/assets/icons/fi_eye.png" alt="eye" />
             <img
               class="icon-style"
               src="@/assets/icons/fi_phone.png"
               alt="phone"
             />
-            <img
-              class="icon-style"
-              src="@/assets/icons/fi_globe.png"
-              alt="globes"
-            />
+            <div @click="showDropDown" class="dropdown">
+              <img
+                class="icon-style"
+                src="@/assets/icons/fi_globe.png"
+                alt="globes"
+              />
+              <div ref="drowdownContent" class="dropdown-content">
+                <ul>
+                  <li><a @click.prevent="clickUz" href="/uz">Uz</a></li>
+                  <li><a @click.prevent="clickRu" href="/ru">Ru</a></li>
+                  <li><a @click.prevent="clickEn" href="/en">En</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Header',
-  props: ['color']
-}
+
+
+  name: "Header",
+  data: () => {},
+  methods: {
+    clickUz() {
+      this.$i18n.setLocale("uz");
+      this.isRu = false;
+    },
+    clickRu() {
+      this.$i18n.setLocale("ru");
+      this.isUz = false;
+    },
+    clickEn() {
+      this.$i18n.setLocale("en");
+      this.isRu = false;
+    },
+    showDropDown() {
+      this.$refs.drowdownContent.classList.toggle("show");
+    },
+    mounted() {
+      windows.addEventListener("click", (e) => {
+        if (e.target.className != "drowdown-content") {
+          this.$refs.drowdownContent.classList.remove("show");
+        }
+      });
+    },
+  },
+  props: ["color"],
+};
+
 </script>
 
 <style scoped>
-
 .icon-style {
   transition: background 0.3s ease;
   cursor: pointer;
@@ -84,11 +102,40 @@ export default {
   color: white;
   height: 75px;
 }
+.test img {
+  padding: 0 20px;
+}
 .header-right {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 15px 0;
+  margin-left: 160px;
+}
+.header-right img {
+  padding: 0 30px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  position: absolute;
+  display: none;
+  top: 30px;
+  right: -50px;
+  background-color: #1c2e51cc;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+.show {
+  display: block;
+}
+.dropdown-content ul li a {
+  text-decoration: none;
+  color: #fff;
 }
 
 @media only screen and (max-width: 800px) {

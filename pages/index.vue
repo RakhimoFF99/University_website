@@ -1,186 +1,143 @@
-<template>
+  <template>
   <div>
-      <Navbar :ShowNavbar="isShowNavbar" :ShowMainLogo="isShowMainLogo" :color="navColor" :height="navHeight"  />
+    <Navbar
+      :ShowNavbar="isShowNavbar"
+      :ShowMainLogo="isShowMainLogo"
+      :color="navColor"
+      :height="navHeight"
+    />
     <div class="container">
       <div class="image">
         <div class="image-border">
           <div class="slide-left"></div>
         </div>
         <div class="image-detail">
-          MAGISTRATURA BOSQICHIGA MUTAXASSISLIK FANLARIDAN TEST SINOVLARI 17 VA
-          18 AVGUST KUNLARI UNIVERSITET HUDUDIDA QUYIDAGI JADVAL
+          {{ $t("indexlang") }}
           <div class="slide-right"></div>
-          <div class="btn-detail">Batafsil malumot</div>
+          <div class="btn-detail">{{ $t("indexlang2") }}</div>
         </div>
       </div>   
     </div> 
     <div class="container">
       <div class="tab-bar">
-        <div class="news-type">Yangiliklar</div>
-        <div class="news-type">Tadbirlar</div>
-        <div class="news-type">E'lonlar</div>
-          <div class="news-type">Foydali</div>
+        <div class="news-type">{{ $t("hlang2") }}</div>
+        <div class="news-type">{{ $t("indexlang3") }}</div>
+        <div class="news-type">{{ $t("indexlang4") }}</div>
+        <div class="news-type">{{ $t("indexlang5") }}</div>
       </div>
     </div>
+    <newsCard />
+    <section style="background-color: #1c2e51">
+      <div
+        class="
+          container-fluid
+          text-white
+          mt-4
+          d-flex
+          justify-content-around
+          flex-wrap
+        "
+        style="padding: 0 2.5rem"
+      >
+        <div class="items col-md-3 d-flex align-items-center">
+          <img src="@/assets/images/image-emblem-small.png" alt="emblem" />
+          <div class="ml-3 mt-1 font-weight-bolder">
+            {{ $t("indexlang6") }}
+          </div>
+        </div>
+        <div class="items col-md-3 d-flex align-items-center">
+          <img src="@/assets/images/image-emblem-small.png" alt="emblem" />
+          <div class="ml-3 mt-1 font-weight-bolder">
+            {{ $t("indexlang7") }}
+          </div>
+        </div>
+        <div class="items col-md-3 d-flex align-items-center">
+          <img src="@/assets/images/image-tax.png" alt="tax" />
+          <div class="ml-3 mt-1 font-weight-bolder">
+            {{ $t("indexlang8") }}
+          </div>
+        </div>
+        <div class="items col-md-3 d-flex align-items-center">
+          <img src="@/assets/images/image-gov.png" alt="gov" />
+          <div class="ml-3 mt-1 font-weight-bolder">
+            {{ $t("indexlang9") }}
+          </div>
+        </div>
+        <div class="items col-md-3 d-flex align-items-center">
+          <img
+            src="@/assets/images/image-foreign-lang.png"
+            alt="foreign-lang"
+          />
+          <div class="ml-3 mt-1 font-weight-bolder">
+            "O‘zbekistonda xorijiy tillar" {{ $t("indexlang10") }}
+          </div>
+        </div>
+        <div class="items col-md-3 d-flex align-items-center">
+          <img
+            src="@/assets/images/image-economical-organization.png"
+            alt="economical"
+          />
+          <div class="ml-3 mt-1 font-weight-bolder">
+            {{ $t("indexlang11") }}
+          </div>
+        </div>
+        <div class="items col-md-3 d-flex align-items-center">
+          <img src="@/assets/images/image-governmental-portal.png" alt="tax" />
+          <div class="ml-3 mt-1 font-weight-bolder">
+            {{ $t("indexlang12") }}
+          </div>
+        </div>
+        <div class="items col-md-3 d-flex align-items-center">
+          <img src="@/assets/images/image-investition.png" alt="tax" />
+          <div class="ml-3 mt-1 font-weight-bolder">
+            {{ $t("indexlang13") }}
+          </div>
+        </div>
 
-    <div class="container mt-4">
-      <div class="news-box">
-        <div class="image-news">
-          <div class="image-text">
-            Filologiya fanlari bo‘yicha falsafa doktori (PhD) ilmiy darajasini
-            olish uchun yozilgan dissertatsiya himoyasi
+        <div class="items col-md-3 d-flex align-items-center">
+          <img src="@/assets/images/image-presidential-service.png" alt="tax" />
+          <div class="ml-3 mt-1 font-weight-bolder">
+            {{ $t("indexlang14") }}
           </div>
         </div>
-        <div class="image-news">
-          <div class="image-text">
-            Filologiya fanlari bo‘yicha falsafa doktori (PhD) ilmiy darajasini
-            olish uchun yozilgan dissertatsiya himoyasi
-          </div>
-        </div>
-        <div class="image-news">
-          <div class="image-text">
-            Filologiya fanlari bo‘yicha falsafa doktori (PhD) ilmiy darajasini
-            olish uchun yozilgan dissertatsiya himoyasi
-          </div>
-        </div>
-        <div class="image-news">
-          <div class="image-text">
-            Filologiya fanlari bo‘yicha falsafa doktori (PhD) ilmiy darajasini
-            olish uchun yozilgan dissertatsiya himoyasi
-          </div>
-        </div>
-        <button class="btn-show-detail">Barchasini ko'rish</button>
       </div>
-    </div>
-    <section style="background-color:#1C2E51">
-    <div
-      class="container-fluid text-white mt-4 d-flex justify-content-around flex-wrap"
-      style="padding:0 2.5rem"
-    >
-      <div class="items col-md-3 d-flex align-items-center">
-        <img src="@/assets/images/image-emblem-small.png" alt="emblem" />
-        <div class="ml-3 mt-1 font-weight-bolder">
-          O'zbekiston Respublikasi xalq ta'limi vazirligi
-        </div>
-      </div>
-      <div class="items col-md-3 d-flex align-items-center">
-        <img src="@/assets/images/image-emblem-small.png" alt="emblem" />
-        <div class="ml-3 mt-1 font-weight-bolder">
-          O'zbekiston Respublikasi Oliy va o'rta maxsus talim vazirligi
-        </div>
-      </div>
-      <div class="items col-md-3 d-flex align-items-center">
-        <img src="@/assets/images/image-tax.png" alt="tax" />
-        <div class="ml-3 mt-1 font-weight-bolder">
-          O'zbekiston Respublikasi davlat soliq qo'mitasi http://soliq.uz
-        </div>
-      </div>
-      <div class="items col-md-3 d-flex align-items-center">
-        <img src="@/assets/images/image-gov.png" alt="gov" />
-        <div class="ml-3 mt-1 font-weight-bolder">
-          Yagona interaktiv davlat xizmatlari portali http://my.gov.uz
-        </div>
-      </div>
-      <div class="items col-md-3 d-flex align-items-center">
-        <img src="@/assets/images/image-foreign-lang.png" alt="foreign-lang" />
-        <div class="ml-3 mt-1 font-weight-bolder">
-          "O‘zbekistonda xorijiy tillar" internet portali va ilmiy-metodik
-          elektron jurnali
-        </div>
-      </div>
-      <div class="items col-md-3 d-flex align-items-center">
-        <img
-          src="@/assets/images/image-economical-organization.png"
-          alt="economical"
-        />
-        <div class="ml-3 mt-1  font-weight-bolder">
-          Внешнеэкономические связи Республики Узбекистан, инвестиции ...
-          http://mfer.uz
-        </div>
-      </div>
-      <div class="items  col-md-3 d-flex align-items-center">
-        <img src="@/assets/images/image-governmental-portal.png" alt="tax" />
-        <div class="ml-3 mt-1 font-weight-bolder">
-          O'zbekiston Respublikasining Hukumat portali http://gov.uz
-        </div>
-      </div>
-      <div class="items col-md-3 d-flex align-items-center">
-        <img src="@/assets/images/image-investition.png" alt="tax" />
-        <div class="ml-3 mt-1 font-weight-bolder">
-          O'zbekiston Respublikasi moliya vazirligi http://mf.uz
-        </div>
-      </div>
-     
-      <div class="items col-md-3 d-flex align-items-center">
-        <img src="@/assets/images/image-presidential-service.png" alt="tax" />
-        <div class="ml-3 mt-1 font-weight-bolder">
-          O'zbekiston Respublikasi Prezidentining matbuot xizmati
-          http://press-service.uz
-        </div>
-      </div>
-    </div>
     </section>
   </div>
 </template>
 
+
 <script> 
  import Navbar from '../components/Navbar.vue'
+ import newsCard from '../components/newsCard.vue'
+
 export default {
   components: {
-    Navbar
+    Navbar,
+    newsCard,
   },
   data() {
     return {
-      navColor:false,
-      isShowMainLogo:true,
-      isShowNavbar:true,
-      title : "",
-       navHeight: {
-        height:"100vh"
+      navColor: false,
+      isShowMainLogo: true,
+      isShowNavbar: true,
+      isShowNews: true,
+      title: "",
+      navHeight: {
+        height: "100vh",
       },
-
-    }
+    };
   },
-  mounted () {
-    console.log(this.$store.state.counter)
-  }
- 
- 
-}
+
+};
+
 </script>
 
 <style>
-.btn-show-detail {
-  color: white;
-  padding: 10px 20px;
-  background-color: #3db166;
-  margin-top: 2rem;
-  border: none;
-  font-weight: 500;
-}
-
 .items {
   height: 100px;
   margin: 1.5rem;
 }
 
-.news-box {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.image-news {
-  width: 500px;
-  height: 350px;
-  margin: 10px;
-  margin-bottom: 6rem;
-  background-image: url('@/assets/images/image-students-news.png');
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  position: relative;
-}
 .image {
   width: 700px;
   display: flex;
@@ -188,19 +145,9 @@ export default {
   position: relative;
   height: 400px;
   margin: 3rem 2rem 2rem 0;
-  background: url('@/assets/images/image-students.png') no-repeat;
+  background: url("@/assets/images/image-students.png") no-repeat;
   background-size: contain;
   background-position: center;
-}
-.image-text {
-  width: 80%;
-  height: 150px;
-  color: white;
-  padding: 20px;
-  background-color: #1c2e51;
-  position: absolute;
-  bottom: -80px;
-  z-index: 55;
 }
 
 .image-border {
@@ -211,7 +158,7 @@ export default {
   width: 700px;
   height: 300px;
   border-radius: 16px;
-  border: 4px solid #1C2E51;
+  border: 4px solid #1c2e51;
 }
 
 .image-detail {
@@ -229,7 +176,7 @@ export default {
   min-height: 200px;
   padding: 20px 30px 20px 20px;
   border-radius: 16px;
-  background-color: #1C2E51;
+  background-color: #1c2e51;
   box-shadow: 0 4px 10px -2px rgb(215, 199, 210);
 }
 
@@ -243,7 +190,7 @@ export default {
 .slide-left {
   width: 50px;
   height: 50px;
-  background-image: url('@/assets/icons/arrow-left.png');
+  background-image: url("@/assets/icons/arrow-left.png");
   background-repeat: no-repeat;
   position: absolute;
   cursor: pointer;
@@ -255,7 +202,7 @@ export default {
   cursor: pointer;
   width: 50px;
   height: 50px;
-  background-image: url('@/assets/icons/arrow-right.png');
+  background-image: url("@/assets/icons/arrow-right.png");
   background-repeat: no-repeat;
   position: absolute;
   right: -25px;
@@ -274,7 +221,7 @@ export default {
 
 .news-type:hover {
   color: white;
-  background-color: #1C2E51;
+  background-color: #1c2e51;
 }
 
 .news-card {
@@ -285,7 +232,7 @@ export default {
 .news-body {
   width: 450px;
   height: 300px;
-  background-image: url('@/assets/images/image-students-news.png');
+  background-image: url("@/assets/images/image-students-news.png");
   background-repeat: no-repeat;
   border-radius: 30px;
 }
@@ -304,16 +251,40 @@ export default {
 
 @media only screen and (max-width: 600px) {
   .image {
-    margin: 0 1rem;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 300px;
+    margin: 3rem 2rem 2rem 0;
+    background: url("@/assets/images/image-students.png") no-repeat;
+    background-size: contain;
+    background-position: center;
   }
   .image-border {
     position: absolute;
     z-index: 10;
-    width: 480px;
+    width: 200px;
     height: 200px;
-    right: 0;
     border-radius: 16px;
     border: 4px solid #85657c;
+  }
+  .image-detail {
+    word-break: break-word;
+    font-size: 10px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    left: 280px;
+    z-index: 11;
+    width: 50%;
+    height: 100px;
+    padding: 10px 20px 10px 10px;
+    border-radius: 16px;
+    background-color: #1c2e51;
+    box-shadow: 0 4px 10px -2px rgb(215, 199, 210);
   }
 }
 </style>
