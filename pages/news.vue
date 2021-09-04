@@ -18,8 +18,18 @@
           <img src="../assets/news/image22.png" alt="" />
         </div>
       </div>
+      <carousel :options="{
 
-      <imgcarousel />
+      }">
+        <img class="col-md-11 my-2" src="../assets/news/image25.png" alt="news2" />
+
+        <img class="col-md-11 my-2" src="../assets/news/image24.png" alt="news3" />
+
+        <img class="col-md-11 my-2" src="../assets/news/image25.png" alt="news4" />
+
+        <img class="col-md-11 my-2" src="../assets/news/image23.png" alt="news5" />
+      </carousel>
+
 
       <div class="new-text">
         <h1>{{ $t("newslang3") }}</h1>

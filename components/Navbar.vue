@@ -40,65 +40,7 @@
         </div>
 
         <div class="navbar-box">
-   
-    <div id="app">
-  <v-app id="inspire">
-    <v-toolbar>
-      <v-toolbar-title>Title</v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn flat>Link One</v-btn>
-        <v-btn flat>Link Two</v-btn>
-        <v-btn flat>Link Three</v-btn>
-        <v-menu open-on-hover bottom offset-y>
-        <template v-slot:activator="{ on }">
-          <v-btn
-            color="primary"
-            dark
-            v-on="on"
-          >
-            Dropdown
-          </v-btn>
-        </template>
 
-        <v-list>
-            <v-list-group
-              v-for="item in items"
-              :key="item.title"
-              v-model="item.active"
-              :prepend-icon="item.action"
-              no-action
-            >
-              <template v-slot:activator>
-                <v-list-tile>
-                  <v-list-tile-content>
-                    <v-list-tile-title>{{ item.title }}</v-list-tile-title>
-                  </v-list-tile-content>
-                </v-list-tile>
-              </template>
-
-              <v-list-tile
-                v-for="subItem in item.items"
-                :key="subItem.title"
-                @click=""
-              >
-                <v-list-tile-content>
-                  <v-list-tile-title>{{ subItem.title }}</v-list-tile-title>
-                </v-list-tile-content>
-
-                <v-list-tile-action>
-                  <v-icon>{{ subItem.action }}</v-icon>
-                </v-list-tile-action>
-              </v-list-tile>
-            </v-list-group>
-          </v-list>
-      </v-menu>
-      </v-toolbar-items>
-    </v-toolbar>
-  </v-app>
-</div>
-     
-        
         </div>
       </div>
     </div>
@@ -172,7 +114,7 @@ export default {
       showSubMenu() {
       this.$refs.ul1.classList.toggle("mm-show");
     }
-  
+
   },
 };
 </script>
@@ -219,7 +161,7 @@ export default {
 
   .background-image {
     position: relative;
-    width: 100%;    
+    width: 100%;
     background : url('@/assets/images/mainBodyImage.png') no-repeat center ;
     background-attachment: fixed;
     background-size: cover;
@@ -232,7 +174,7 @@ export default {
         background-color: #1c2e51cc
 ;
     }
-  
+
   .title {
       display: flex;
       justify-content: center;
@@ -249,11 +191,11 @@ export default {
         font-weight: 700;
         margin: 0 20px;
     }
-    
+
     .hide {
             transform: translateX(300px);
     }
-      .navbar { 
+      .navbar {
         display: flex;
         margin: 0;
         padding: 0;
@@ -262,7 +204,7 @@ export default {
         transition: transform 0.7s ease;
         position: relative;
     }
-    
+
     .navbar-list {
         display: flex;
         flex-direction: column;
@@ -271,7 +213,7 @@ export default {
         margin-top: 50px;
         width: 220px;
     }
-   
+
     .navbar-box {
     width: 300px;
     height: 100vh;
@@ -280,7 +222,7 @@ export default {
     .navbar-box {
       display: flex;
       justify-content: center;
-      
+
     }
 
 
