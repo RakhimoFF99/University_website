@@ -2,7 +2,7 @@
   <div class="header-container" :style="color">
     <div class="container">
       <div class="row justify-content-between py-2">
-        <div class="col-md-8">
+        <div class="col-md-8 m-0 p-0">
           <div class="header-left d-flex">
             <img src="@/assets/icons/logo1.png" alt="logo" />
 
@@ -57,8 +57,6 @@
 
 <script>
 export default {
-
-
   name: "Header",
   data: () => {},
   methods: {
@@ -87,7 +85,6 @@ export default {
   },
   props: ["color"],
 };
-
 </script>
 
 <style scoped>
@@ -111,6 +108,9 @@ export default {
   align-items: center;
   padding: 15px 0;
   margin-left: 160px;
+}
+.header-left {
+  height: 60px;
 }
 .header-right img {
   padding: 0 30px;

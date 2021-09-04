@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="background: white">
     <div class="container">
       <div class="text-logo mt-5">
         <h1 style="color: #1c2e51">Bo'limlar</h1>
@@ -152,7 +152,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: "sections",
+};
 </script>
 
 

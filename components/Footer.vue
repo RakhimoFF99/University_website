@@ -1,5 +1,5 @@
 <template>
-  <div class="footer text-white">
+  <div class="footer text-white bg-white">
     <section>
       <div class="container">
         <div class="row brands my-3 d-flex justify-content-around">
@@ -17,19 +17,19 @@
           <div class="row d-flex justify-content-around align-items-center">
             <div class="col-md-4">
               <img
-                class="footer-logo mt-3"
+                class="footer-logo mb-4"
                 src="@/assets/images/footer-logo.png"
                 alt="footerLogo"
               />
             </div>
-            <div class="col-md-2 text-white mb-1">
+            <div class="col-md-2 text-white mb-3">
               {{ $t("flang2") }}
             </div>
             <div class="col-md-3 mb-2">
               {{ $t("flang3") }}
-              <p class="mt-2 h5">{{ $t("flang4") }}</p>
+              <p class="mt-2 h5 text-white">{{ $t("flang4") }}</p>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 pt-5 mt-5">
               {{ $t("flang5") }}
               <p>+99897 529-99-51</p>
               <div class="social-networks">{{ $t("flang6") }}</div>
@@ -125,7 +125,13 @@ export default {
 
 <style scoped>
 .footer {
-  overflow: hidden;
+  width: 100vw;
+  height: auto;
+  position: relative;
+  left: 0;
+  top: auto;
+  margin: 0;
+  padding: 0;
 }
 .brands img {
   filter: grayscale(100%);

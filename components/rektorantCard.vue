@@ -61,7 +61,8 @@ export default {
 .btn {
   position: absolute;
   right: 0;
-  top: 250px;
+  width: 180px;
+  top: 235px;
   background: #3db166;
 }
 </style>

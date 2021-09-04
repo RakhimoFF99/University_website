@@ -1,14 +1,35 @@
 <template>
   <div>
-    <div class="cards row">
-      <img class="col-md-3 my-2" src="../assets/news/image25.png" alt="news2" />
+    <carousel :options="{}" :items="4">
+      <img
+        class="col-md-11 my-2"
+        src="../assets/news/image25.png"
+        alt="news2"
+      />
 
-      <img class="col-md-3 my-2" src="../assets/news/image24.png" alt="news3" />
+      <img
+        class="col-md-11 my-2"
+        src="../assets/news/image24.png"
+        alt="news3"
+      />
 
-      <img class="col-md-3 my-2" src="../assets/news/image25.png" alt="news4" />
+      <img
+        class="col-md-11 my-2"
+        src="../assets/news/image25.png"
+        alt="news4"
+      />
 
-      <img class="col-md-3 my-2" src="../assets/news/image23.png" alt="news5" />
-    </div>
+      <img
+        class="col-md-11 my-2"
+        src="../assets/news/image23.png"
+        alt="news5"
+      />
+      <img
+        class="col-md-11 my-2"
+        src="../assets/news/image23.png"
+        alt="news5"
+      />
+    </carousel>
 
     <h5 v-if="text" class="text">
       {{ $t("textCarousel") }}

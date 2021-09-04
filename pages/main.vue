@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="background: white">
     <navbar
       :ShowNavbar="isShowNavbar"
       :ShowMainLogo="isShowMainLogo"

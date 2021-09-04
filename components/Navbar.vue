@@ -4,7 +4,7 @@
       <div v-if="color" class="color"></div>
       <div v-if="ShowMainLogo" class="main-logo col-md-6 mx-auto"></div>
       <div class="title">
-        <h1>
+        <h1 class="text-white">
           {{ title }} <br />
           {{ title1 }}
         </h1>
@@ -39,9 +39,7 @@
           </div>
         </div>
 
-        <div class="navbar-box">
-
-        </div>
+        <div class="navbar-box"></div>
       </div>
     </div>
   </div>
@@ -52,69 +50,56 @@ export default {
   name: "Navbar",
   data: () => ({
     items: [
-        {
-          action: 'local_activity',
-          title: 'Attractions',
-          items: [
-            { title: 'List Item' }
-          ]
-        },
-        {
-          action: 'restaurant',
-          title: 'Dining',
-          active: true,
-          items: [
-            { title: 'Breakfast & brunch' },
-            { title: 'New American' },
-            { title: 'Sushi' }
-          ]
-        },
-        {
-          action: 'school',
-          title: 'Education',
-          items: [
-            { title: 'List Item' }
-          ]
-        },
-        {
-          action: 'directions_run',
-          title: 'Family',
-          items: [
-            { title: 'List Item' }
-          ]
-        },
-        {
-          action: 'healing',
-          title: 'Health',
-          items: [
-            { title: 'List Item' }
-          ]
-        },
-        {
-          action: 'content_cut',
-          title: 'Office',
-          items: [
-            { title: 'List Item' }
-          ]
-        },
-        {
-          action: 'local_offer',
-          title: 'Promotions',
-          items: [
-            { title: 'List Item' }
-          ]
-        }
-      ]
+      {
+        action: "local_activity",
+        title: "Attractions",
+        items: [{ title: "List Item" }],
+      },
+      {
+        action: "restaurant",
+        title: "Dining",
+        active: true,
+        items: [
+          { title: "Breakfast & brunch" },
+          { title: "New American" },
+          { title: "Sushi" },
+        ],
+      },
+      {
+        action: "school",
+        title: "Education",
+        items: [{ title: "List Item" }],
+      },
+      {
+        action: "directions_run",
+        title: "Family",
+        items: [{ title: "List Item" }],
+      },
+      {
+        action: "healing",
+        title: "Health",
+        items: [{ title: "List Item" }],
+      },
+      {
+        action: "content_cut",
+        title: "Office",
+        items: [{ title: "List Item" }],
+      },
+      {
+        action: "local_offer",
+        title: "Promotions",
+        items: [{ title: "List Item" }],
+      },
+    ],
   }),
   props: ["color", "ShowNavbar", "ShowMainLogo", "height", "title", "title1"],
   methods: {
     toogleNavbar() {
       this.$refs.nav.classList.toggle("hide");
     },
-      showSubMenu() {
+    showSubMenu() {
       this.$refs.ul1.classList.toggle("mm-show");
-    }
-
+    },
   },
 };
 </script>
@@ -158,74 +143,69 @@ export default {
   transform: translateX(300px);
 }
 
+.background-image {
+  position: relative;
+  width: 100%;
+  background: url("@/assets/images/mainBodyImage.png") no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+.color {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #1c2e51cc;
+}
 
-  .background-image {
-    position: relative;
-    width: 100%;
-    background : url('@/assets/images/mainBodyImage.png') no-repeat center ;
-    background-attachment: fixed;
-    background-size: cover;
-    overflow:hidden
-    }
-    .color {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        background-color: #1c2e51cc
-;
-    }
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  color: white;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
 
-  .title {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      top: 0;
-      color: white;
-      left: 0;
-      bottom: 0;
-      right: 0;
-  }
+.title h1 {
+  font-weight: 700;
+  margin: 0 20px;
+}
 
-    .title h1 {
-        font-weight: 700;
-        margin: 0 20px;
-    }
+.hide {
+  transform: translateX(300px);
+}
+.navbar {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: flex-start;
+  justify-content: flex-end;
+  transition: transform 0.7s ease;
+  position: relative;
+}
 
-    .hide {
-            transform: translateX(300px);
-    }
-      .navbar {
-        display: flex;
-        margin: 0;
-        padding: 0;
-        align-items: flex-start;
-        justify-content: flex-end;
-        transition: transform 0.7s ease;
-        position: relative;
-    }
+.navbar-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: white;
+  margin-top: 50px;
+  width: 220px;
+}
 
-    .navbar-list {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        color: white;
-        margin-top: 50px;
-        width: 220px;
-    }
-
-    .navbar-box {
-    width: 300px;
-    height: 100vh;
-    background-color: #000000e0;
-    }
-    .navbar-box {
-      display: flex;
-      justify-content: center;
-
-    }
-
-
+.navbar-box {
+  width: 300px;
+  height: 100vh;
+  background-color: #000000e0;
+}
+.navbar-box {
+  display: flex;
+  justify-content: center;
+}
 
 .nav-item {
   width: 100%;

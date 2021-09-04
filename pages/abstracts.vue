@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="background: white">
     <div class="icon">
       <nuxt-link style="color: black" to="/">
         <svg

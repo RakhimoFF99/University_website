@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="background: white">
     <Navbar :title="title" :color="navColor" :height="navHeight" />
     <rektorant-card />
   </div>
