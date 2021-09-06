@@ -24,7 +24,7 @@
               </div>
               <br />
               <div class="tele">
-                Telefon: <br />
+                {{ $t("mainPhone") }}: <br />
                 <strong>+998 71 230-12-91</strong>
               </div>
               <br />
@@ -38,16 +38,16 @@
             <div class="col-md-8">
               <div>
                 Transport: <br />
-                <strong>131-avtobus, 13-yo`nalishli taksi.</strong>
+                <strong>{{ $t("transport") }}</strong>
               </div>
               <br />
               <div>
                 Manzil: <br />
-                <strong
-                  >Toshkent shahri, Kichik Xalqa <br />
-                  Yo`li ko`chasi, G-9a mavzesi, <br />
-                  21-a uy.</strong
-                >
+                <strong>
+                  {{ $t("manzil") }} <br />
+                  {{ $t("manzil2") }} <br />
+                  {{ $t("manzil3") }}
+                </strong>
               </div>
             </div>
           </div>

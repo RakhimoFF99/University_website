@@ -4,21 +4,25 @@
       <div class="image-news">
         <div class="image-text">
           {{ $t("blang") }}
+          <a href="#"> {{ $t("indexlang2") }}</a>
         </div>
       </div>
       <div class="image-news">
         <div class="image-text">
           {{ $t("blang") }}
+          <a href="#"> {{ $t("indexlang2") }}</a>
         </div>
       </div>
       <div class="image-news">
         <div class="image-text">
           {{ $t("blang") }}
+          <a href="#"> {{ $t("indexlang2") }}</a>
         </div>
       </div>
       <div class="image-news">
         <div class="image-text">
           {{ $t("blang") }}
+          <a href="#"> {{ $t("indexlang2") }}</a>
         </div>
       </div>
       <button class="btn-show-detail">{{ $t("bblang") }}</button>
@@ -45,6 +49,7 @@ export default {
   margin-bottom: 6rem;
   background-image: url("@/assets/images/image-students-news.png");
   background-repeat: no-repeat;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -59,6 +64,16 @@ export default {
   position: absolute;
   bottom: -80px;
   z-index: 55;
+  border-radius: 8px;
+  font-size: 18px;
+}
+.image-text a {
+  text-decoration: none;
+  color: #3db166;
+  position: relative;
+  top: 30px;
+  left: 40px;
+  font-size: 16px;
 }
 .btn-show-detail {
   background-color: #3db166;

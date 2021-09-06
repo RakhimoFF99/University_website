@@ -56,5 +56,10 @@ export default {
      "rektor-today": "Wednesday",
      "rektor-acceptance": "Virtual reception",
      "mainPage": "Communication",
-     "mainPageh5": "Uzbekistan State University of World Languages"
+     "mainPageh5": "Uzbekistan State University of World Languages",
+     "mainPhone": "Phone",
+     "transport": "Bus 131, taxi 13.",
+     "manzil": "Tashkent city, Small Ring",
+     "manzil2": "Yuli street, G-9a district,",
+     "manzil3": "21-a house."
 }

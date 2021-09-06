@@ -10,7 +10,7 @@
       />
       <div class="container">
         <div class="row mt-5">
-          <div class="col-md-8 mt-3">
+          <div style="font-size: 18px" class="col-md-8 mt-2">
             {{ $t("aboutlang") }}
             <br /><br />
             <p>
@@ -35,7 +35,7 @@
           <img src="@/assets/images/about-image2.png" alt="about-image" />
         </div>
 
-        <div class="col-md-8 mt-3">
+        <div style="font-size: 18px" class="col-md-8 mt-2">
           {{ $t("aboutlang3") }}
           <br /><br />
           <p>
@@ -47,7 +47,7 @@
 
     <div class="container mt-5">
       <div class="row">
-        <div class="col-md-8 mt-3">
+        <div style="font-size: 18px" class="col-md-8 mt-2">
           {{ $t("aboutlang5") }}
           <br /><br />
           <p>

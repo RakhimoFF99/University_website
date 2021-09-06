@@ -56,6 +56,10 @@ export default {
      "rektor-today": "Chorshanba",
      "rektor-acceptance": "Virtual kabulxona",
      "mainPage": "Aloqa",
-     "mainPageh5": "O'zbekiston Davlat Jahon tillari universiteti"
-
+     "mainPageh5": "O'zbekiston Davlat Jahon tillari universiteti",
+     "mainPhone": "Telefon",
+     "transport": "131-avtobus, 13-yo`nalishli taksi.",
+     "manzil": "Toshkent shahri, Kichik Xalqa",
+     "manzil2": "Yo`li ko`chasi, G-9a mavzesi,",
+     "manzil3": "21-a uy."
 }
