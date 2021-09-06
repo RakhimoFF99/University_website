@@ -2,7 +2,7 @@
   <div style="background: white">
     <div class="container">
       <div class="text-logo mt-5">
-        <h1 style="color: #1c2e51">Bo'limlar</h1>
+        <h1 style="color: #1c2e51">{{ $t("section") }}</h1>
       </div>
       <div class="mt-4">
         <div class="section">

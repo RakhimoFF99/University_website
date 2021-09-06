@@ -45,6 +45,17 @@ export default {
      "storyTitle": "Oliy ta'lim muassasining tarixi",
      "story": "18-19 mart kunlari umumjahon chempioni xayriya xayriya chempioni milliy a'zosi-professor -Onituville va siyosiy klarig talabasi Birri Igrikan geografik jihatdan hasharotlar bilan etika bilan shug'ullanadilar. Zhumladan uch-tepa tumanidov bog'lar emas 1200 tug'ilgan pravoslav yoki professor-ankituvchillar qabul ishtirok etishgan bulsa, uch-tepa Tumat Alp 4-uida tashkil ethylord 500 nafardan orthodan Tallar va professor-onituvchilar, universitit Bosh va 1500 odamlar bor ishtirok hududida men uch-tepa Nava Nava Nawazy Farolsky yagiiny yazyn Hamadoni-siyosatchi va professor-onituvchilar, qarash uchun ish bu erda. Ushbu seminar-yig'ilish loyiha doirasida ishlab chiqildi: Sug'd viloyatini ijtimoiy-iqtisodiy rivojlantirishni rejalashtirish, monitoring va tahlil qilish;",
      "bottomText": "18-19 mart kunlari umumjahon chempioni xayriya xayriya chempioni milliy a'zosi-professor-Onituville va siyosiy klarig talabasi Birri Igrikan geografik jihatdan hasharotlar bilan etika bilan shug'ullanadilar. Zhumladan uch-tepa tumanidov bog'lar emas 1200 tug'ilgan pravoslav yoki professor- ankituvchillar qabul ishtirok etishgan bulsa, uch-tepa Tumat Alp 4-uida tashkil ethylord 500 nafardan orthodan Tallar va professor-onituvchilar, universitit Bosh va 1500 odamlar bor ishtirok hududida men uch-tepa Nava Nava Nawazy Farolsky yagiiny yazyn Hamadoni-siyosatchi va professor- onituvchilar, qarash uchun ish bu erda. Ushbu seminar-yig'ilish loyiha doirasida ishlab chiqildi: Sug'd viloyatini ijtimoiy-iqtisodiy rivojlantirishni rejalashtirish,monitoring va tahlil qilish;",
-
+     "section": "Bo'limlar",
+     "abstracts": "Avtoreferatlar",
+     "lecturestitle": "ЎЗБЕКИСТОН ДАВЛАТ",
+     "lecturestitle2": "ЖАҲОН ТИЛЛАРИ УНИВЕРСИТЕТИ",
+     "lecturesh3": "2019-2020 ўқув йили учун таклиф этилаётган магистрлик диссертация мавзулари",
+     "lecturesp": "Тақдим этилаётган қуйидаги магистрлик диссертация мавзулари университетнинг 2018 йил 20 августдаги 596-сонли буйруғига асосан мутахассислик кафедраларида фаолият юритаётган фан номзоди (PhD) ва фан доктори (DSc)лар томонидан тақдим этилган, кафедраларда, факультетларда ва Илмий-услубий кенгашда муҳокама қилинган ва тасдиқланган.",
+     "rektorantT": "O'zbekiston davlat jahon tillari universiteti rektori",
+     "Acceptance": "Qabul",
+     "rektor-today": "Chorshanba",
+     "rektor-acceptance": "Virtual kabulxona",
+     "mainPage": "Aloqa",
+     "mainPageh5": "O'zbekiston Davlat Jahon tillari universiteti"
 
 }

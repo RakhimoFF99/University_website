@@ -44,6 +44,17 @@ export default {
      "elon2": "The Navruz holiday organized at the university is truly our people's a scene of demonstration of beautiful customs, traditions and values It is no exaggeration to say that it happened. On one side is the spring ambassador of the young men the flight of a swallow-like leaf, the weaving of the girls themselves, with waterfall-like hair, a connoisseur of our values the beautiful traditions of the teachers in our provinces to tell the traditions to the students, in a word this is a wonderful sight In other words, Uzbekistan is a magical land of fairy tales because the future of the heavenly country is great, and its people are happy evidence. To the photos below that refer to your judgment moments equal to sealed gold, we think you are indifferent too does not leave.",
      "storyTitle": "History of higher education institution",
      "story": "On March 18-19, the world champion will be a member of the National Charitable Champion-Professor-Onituville and a political clarinet student, Birri Igrikan, who will be geographically involved in insect ethics. In particular, the three-hill district gardens were attended by 1,200 Orthodox or professors, while the three-hill Tumat Alp 4 was attended by more than 500 ethylord Tallars and professors, the University Chief and 1,500 people in the participating area. I work here to look at the three-hill Nava Nava Nawazy Farolsky yagiiny yazyn Hamadoni-politicians and professors. This workshop was developed as part of the project: Planning, monitoring and analysis of socio-economic development of Sughd region;",
-     "bottomText": "On March 18-19, Birri Igrikan, a national member-professor-onituville and political clarinet student who is a world champion, will be involved in the ethics of insects geographically. In particular, the three-hill district gardens were attended by 1,200 Orthodox or professors, while the three-hill Tumat Alp 4 was attended by more than 500 ethylord Tallars and professors, the University Chief and 1,500 people. I work here to look at the three-hill Nava Nava Nawazy Farolsky yagiiny yazyn Hamadoni-politicians and professors. This workshop was developed as part of the project: Planning, monitoring and analysis of socio-economic development of Sughd region;"
-
+     "bottomText": "On March 18-19, Birri Igrikan, a national member-professor-onituville and political clarinet student who is a world champion, will be involved in the ethics of insects geographically. In particular, the three-hill district gardens were attended by 1,200 Orthodox or professors, while the three-hill Tumat Alp 4 was attended by more than 500 ethylord Tallars and professors, the University Chief and 1,500 people. I work here to look at the three-hill Nava Nava Nawazy Farolsky yagiiny yazyn Hamadoni-politicians and professors. This workshop was developed as part of the project: Planning, monitoring and analysis of socio-economic development of Sughd region;",
+     "section": "Sections",
+     "abstracts": "Abstracts",
+     "lecturestitle": "UZBEKISTAN STATE",
+     "lecturestitle2": "UNIVERSITY OF WORLD LANGUAGES",
+     "lecturesh3": "The proposed master's dissertation for the 2019-2020 academic year topics",
+     "lecturesp": "The following master's dissertation topics are presented in accordance with the University’s Order No. 596 of 20 August 2018 Candidate of Science (PhD) working in specialty departments and Ph.D. (DSc) s, in the departments, discussed in the faculties and the Scientific-Methodical Council and approved.",
+     "rektorantT": "Rector of the Uzbek State University of World Languages",
+     "Acceptance": "Acceptance",
+     "rektor-today": "Wednesday",
+     "rektor-acceptance": "Virtual reception",
+     "mainPage": "Communication",
+     "mainPageh5": "Uzbekistan State University of World Languages"
 }

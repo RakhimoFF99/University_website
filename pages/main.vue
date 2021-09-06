@@ -10,9 +10,11 @@
     <div class="container">
       <div class="row mt-5">
         <div class="col-md-6 mt-5">
-          <h1><strong>Aloqa</strong></h1>
+          <h1>
+            <strong>{{ $t("mainPage") }}</strong>
+          </h1>
           <br />
-          <h5>O'zbekiston Davlat Jahon tillari universiteti</h5>
+          <h5>{{ $t("mainPageh5") }}</h5>
           <br />
           <div class="row">
             <div class="col-md-4">

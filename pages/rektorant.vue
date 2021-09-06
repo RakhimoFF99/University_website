@@ -11,7 +11,7 @@ import RektorantCard from "../components/rektorantCard.vue";
 export default {
   data: () => ({
     navColor: true,
-    title: "Rektorant",
+    title: "Rektorat",
     navHeight: {
       height: "30vh",
     },

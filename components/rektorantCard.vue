@@ -9,15 +9,17 @@
         <div class="header my-1">
           <h1 style="font-weight: 700">Alisher Ulugbek Botirovich</h1>
           <h5 class="my-3">
-            O'zbekiston davlat jahon tillari universiteti rektori
+            {{ $t("rektorantT") }}
           </h5>
           <br />
         </div>
         <div class="row">
           <div class="col-md-6">
             <div style="color: #666666; font-weight: 500" class="entrance">
-              Qabul:
-              <h5 class="mt-2 text-dark">Chorshanba, 16.00 - 18.00</h5>
+              {{ $t("Acceptance") }}:
+              <h5 class="mt-2 text-dark">
+                {{ $t("rektor-today") }}, 16.00 - 18.00
+              </h5>
               <br />
             </div>
             <div style="color: #666666; font-weight: 500">
@@ -36,7 +38,7 @@
               <h5 class="mt-2 text-dark">+998 71 230-12-91</h5>
             </div>
           </div>
-          <button class="btn btn-success">Virtual kabulxona</button>
+          <button class="btn btn-success">{{ $t("rektor-acceptance") }}</button>
         </div>
       </div>
     </div>
