@@ -32,6 +32,7 @@
 import Imgcarousel from "../components/Imgcarousel.vue";
 import Navbar from "../components/Navbar.vue";
 import newsCard from "../components/newsCard.vue";
+import {mapMutations} from 'vuex'
 export default {
   components: { Navbar, Imgcarousel, newsCard },
   data() {
@@ -44,8 +45,14 @@ export default {
       },
       text: true,
       title: "Universitet jamoasi Umummxalq hayriya xasharida",
-    };
+    }
   },
+  methods:{
+      ...mapMutations('colors',['setColor'])
+  },
+  mounted() {
+    this.setColor(false)
+  }
 };
 </script>
 

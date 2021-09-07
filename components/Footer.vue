@@ -1,5 +1,5 @@
 <template>
-  <div class="footer text-white bg-white">
+  <div  class="footer text-white bg-white">
     <section>
       <div class="container">
         <div class="row brands my-3 d-flex justify-content-around">
@@ -11,7 +11,7 @@
       </div>
     </section>
 
-    <section style="background-color: #1c2e51">
+    <section :style="color">
       <div class="container">
         <div class="footer-info">
           <div class="row d-flex justify-content-around align-items-center">
@@ -120,6 +120,7 @@
 <script>
 export default {
   name: "Footer",
+  props:['color']
 };
 </script>
 
