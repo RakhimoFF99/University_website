@@ -135,15 +135,15 @@ export default {
   padding: 0;
 }
 .brands img {
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
   cursor: pointer;
   margin: 1rem 1rem 2rem 1rem;
   width: 180px;
   height: 110px;
 }
-.brands img:hover {
+/* .brands img:hover {
   filter: grayscale(0);
-}
+} */
 .icons {
   width: 120%;
   padding-left: 10px;
