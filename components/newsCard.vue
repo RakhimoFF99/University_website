@@ -3,25 +3,26 @@
     <div class="news-box">
       <div class="image-news">
         <div class="image-text">
-          {{ $t("blang") }}
+          {{ $t("blang") }} <br />
           <a href="#"> {{ $t("indexlang2") }}</a>
         </div>
       </div>
       <div class="image-news">
         <div class="image-text">
-          {{ $t("blang") }}
+          {{ $t("blang") }} <br />
           <a href="#"> {{ $t("indexlang2") }}</a>
         </div>
       </div>
       <div class="image-news">
         <div class="image-text">
-          {{ $t("blang") }}
+          {{ $t("blang") }} <br />
+
           <a href="#"> {{ $t("indexlang2") }}</a>
         </div>
       </div>
       <div class="image-news">
         <div class="image-text">
-          {{ $t("blang") }}
+          {{ $t("blang") }} <br />
           <a href="#"> {{ $t("indexlang2") }}</a>
         </div>
       </div>
@@ -68,12 +69,11 @@ export default {
   font-size: 18px;
 }
 .image-text a {
+  float: right;
   text-decoration: none;
   color: #3db166;
-  position: relative;
-  top: 30px;
-  left: 40px;
   font-size: 16px;
+  margin-top: 10px;
 }
 .btn-show-detail {
   background-color: #3db166;

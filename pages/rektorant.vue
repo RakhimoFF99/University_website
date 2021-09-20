@@ -8,6 +8,7 @@
 <script>
 import Navbar from "../components/Navbar.vue";
 import RektorantCard from "../components/rektorantCard.vue";
+import {mapMutations} from 'vuex'
 export default {
   data: () => ({
     navColor: true,
@@ -21,6 +22,12 @@ export default {
     Navbar,
     RektorantCard,
   },
+  methods:{
+      ...mapMutations('colors',['setColor'])
+  },
+  mounted() {
+    this.setColor(false)
+  }
 };
 </script>
 

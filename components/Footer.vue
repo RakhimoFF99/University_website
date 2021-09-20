@@ -1,5 +1,5 @@
 <template>
-  <div  class="footer text-white bg-white">
+  <div class="footer text-white bg-white">
     <section>
       <div class="container">
         <div class="row brands my-3 d-flex justify-content-around">
@@ -120,7 +120,7 @@
 <script>
 export default {
   name: "Footer",
-  props:['color']
+  props: ["color"],
 };
 </script>
 
@@ -155,7 +155,7 @@ export default {
 }
 .icons span img,
 svg {
-  padding-bottom: 5px;
+  padding-bottom: 3px;
 }
 .fasebook {
   width: 45px;

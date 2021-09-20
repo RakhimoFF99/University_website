@@ -32,6 +32,7 @@
 import newsCard from "@/components/newsCard";
 import Navbar from "../components/Navbar.vue";
 import Imgcarousel from "../components/Imgcarousel.vue";
+import {mapMutations} from 'vuex'
 export default {
   components: {
     Navbar,
@@ -50,6 +51,12 @@ export default {
       title: "Munosabat",
     };
   },
+  methods:{
+      ...mapMutations('colors',['setColor'])
+  },
+  mounted() {
+    this.setColor(false)
+  }
 };
 </script>
 

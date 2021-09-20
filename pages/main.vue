@@ -6,6 +6,7 @@
       :color="navColor"
       :height="navHeight"
       :title="title"
+      :bg_color="bgColor"
     />
     <div class="container">
       <div class="row mt-5">
@@ -71,6 +72,9 @@ export default {
       isShowMainLogo: true,
       isShowNavbar: true,
       isShowNews: true,
+      bgColor: {
+        background: "rgba(138, 42, 43, 0.7)",
+      },
       title: "",
       navHeight: {
         height: "100vh",

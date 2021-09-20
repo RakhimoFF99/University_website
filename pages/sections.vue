@@ -152,8 +152,15 @@
 </template>
 
 <script>
+import {mapMutations} from 'vuex'
 export default {
   name: "sections",
+  methods:{
+      ...mapMutations('colors',['setColor'])
+  },
+  mounted() {
+    this.setColor(false)
+  }
 };
 </script>
 

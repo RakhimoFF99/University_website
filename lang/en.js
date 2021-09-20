@@ -16,7 +16,6 @@ export default {
      "indexlang2": "More information",
      "indexlang3": "Events",
      "indexlang4": "Announcements",
-     "indexlang5": "Useful",
      "indexlang6": "Ministry of public education of the Republic of Uzbekistan",
      "indexlang7": "Ministry of Higher and secondary special education of the Republic of Uzbekistan",
      "indexlang8": "State Tax Office of the Republic of Uzbekistan http://soliq.uz",

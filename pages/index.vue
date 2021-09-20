@@ -16,17 +16,132 @@
           <div class="slide-right"></div>
           <div class="btn-detail">{{ $t("indexlang2") }}</div>
         </div>
-      </div>   
-    </div> 
-    <div class="container">
-      <div class="tab-bar">
-        <div class="news-type">{{ $t("hlang2") }}</div>
-        <div class="news-type">{{ $t("indexlang3") }}</div>
-        <div class="news-type">{{ $t("indexlang4") }}</div>
-        <div class="news-type">{{ $t("indexlang5") }}</div>
       </div>
     </div>
-    <newsCard />
+    <div class="container">
+      <div class="tab-bar">
+        <!-- <div class="news-type">{{ $t("hlang2") }}</div>
+        <div class="news-type">{{ $t("indexlang3") }}</div>
+        <div class="news-type">{{ $t("indexlang4") }}</div> -->
+        <div id="app">
+          <v-app id="inspire">
+            <v-card style="box-shadow: none">
+              <v-tabs>
+                <v-tab> Yangiliklar </v-tab>
+                <v-tab> Tadbirlar </v-tab>
+                <v-tab> E'lonlar </v-tab>
+
+                <v-tab-item>
+                  <v-card flat>
+                    <v-card-actions>
+                      <div class="container mt-4">
+                        <div class="news-box">
+                          <div class="image-news">
+                            <div class="image-text">
+                              {{ $t("blang") }} <br />
+                              <a href="#"> {{ $t("indexlang2") }}</a>
+                            </div>
+                          </div>
+                          <div class="image-news">
+                            <div class="image-text">
+                              {{ $t("blang") }} <br />
+                              <a href="#"> {{ $t("indexlang2") }}</a>
+                            </div>
+                          </div>
+                          <div class="image-news">
+                            <div class="image-text">
+                              {{ $t("blang") }} <br />
+
+                              <a href="#"> {{ $t("indexlang2") }}</a>
+                            </div>
+                          </div>
+                          <div class="image-news">
+                            <div class="image-text">
+                              {{ $t("blang") }} <br />
+                              <a href="#"> {{ $t("indexlang2") }}</a>
+                            </div>
+                          </div>
+                          <button class="btn-show-detail">
+                            {{ $t("bblang") }}
+                          </button>
+                        </div>
+                      </div>
+                    </v-card-actions>
+                  </v-card>
+                </v-tab-item>
+                <v-tab-item>
+                  <v-card flat>
+                    <v-card-text>
+                      <p>
+                        Morbi nec metus. Suspendisse faucibus, nunc et
+                        pellentesque egestas, lacus ante convallis tellus, vitae
+                        iaculis lacus elit id tortor. Sed mollis, eros et
+                        ultrices tempus, mauris ipsum aliquam libero, non
+                        adipiscing dolor urna a orci. Curabitur ligula sapien,
+                        tincidunt non, euismod vitae, posuere imperdiet, leo.
+                        Nunc sed turpis.
+                      </p>
+
+                      <p>
+                        Suspendisse feugiat. Suspendisse faucibus, nunc et
+                        pellentesque egestas, lacus ante convallis tellus, vitae
+                        iaculis lacus elit id tortor. Proin viverra, ligula sit
+                        amet ultrices semper, ligula arcu tristique sapien, a
+                        accumsan nisi mauris ac eros. In hac habitasse platea
+                        dictumst. Fusce ac felis sit amet ligula pharetra
+                        condimentum.
+                      </p>
+
+                      <p>
+                        Sed consequat, leo eget bibendum sodales, augue velit
+                        cursus nunc, quis gravida magna mi a libero. Nam commodo
+                        suscipit quam. In consectetuer turpis ut velit. Sed
+                        cursus turpis vitae tortor. Aliquam eu nunc.
+                      </p>
+
+                      <p>
+                        Etiam ut purus mattis mauris sodales aliquam. Ut varius
+                        tincidunt libero. Aenean viverra rhoncus pede. Duis leo.
+                        Fusce fermentum odio nec arcu.
+                      </p>
+
+                      <p class="mb-0">
+                        Donec venenatis vulputate lorem. Aenean viverra rhoncus
+                        pede. In dui magna, posuere eget, vestibulum et, tempor
+                        auctor, justo. Fusce commodo aliquam arcu. Suspendisse
+                        enim turpis, dictum sed, iaculis a, condimentum nec,
+                        nisi.
+                      </p>
+                    </v-card-text>
+                  </v-card>
+                </v-tab-item>
+                <v-tab-item>
+                  <v-card flat>
+                    <v-card-text>
+                      <p>
+                        Fusce a quam. Phasellus nec sem in justo pellentesque
+                        facilisis. Nam eget dui. Proin viverra, ligula sit amet
+                        ultrices semper, ligula arcu tristique sapien, a
+                        accumsan nisi mauris ac eros. In dui magna, posuere
+                        eget, vestibulum et, tempor auctor, justo.
+                      </p>
+
+                      <p class="mb-0">
+                        Cras sagittis. Phasellus nec sem in justo pellentesque
+                        facilisis. Proin sapien ipsum, porta a, auctor quis,
+                        euismod ut, mi. Donec quam felis, ultricies nec,
+                        pellentesque eu, pretium quis, sem. Nam at tortor in
+                        tellus interdum sagittis.
+                      </p>
+                    </v-card-text>
+                  </v-card>
+                </v-tab-item>
+              </v-tabs>
+            </v-card>
+          </v-app>
+        </div>
+      </div>
+    </div>
     <section style="background-color: #1c2e51">
       <div
         class="
@@ -106,10 +221,10 @@
 </template>
 
 
-<script> 
- import Navbar from '../components/Navbar.vue'
- import newsCard from '../components/newsCard.vue'
-
+<script>
+import Navbar from "../components/Navbar.vue";
+import newsCard from "../components/newsCard.vue";
+import { mapMutations } from "vuex";
 export default {
   components: {
     Navbar,
@@ -125,17 +240,73 @@ export default {
       navHeight: {
         height: "100vh",
       },
+
+      tab: null,
+      items: ["yangiliklar", "tadibirlar", "elonlar"],
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     };
   },
-
+  methods: {
+    ...mapMutations("colors", ["setColor"]),
+  },
+  mounted() {
+    this.setColor(false);
+  },
 };
-
 </script>
 
 <style>
+.news-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.image-news {
+  width: 500px;
+  height: 350px;
+  margin: 10px;
+  margin-bottom: 6rem;
+  background-image: url("@/assets/images/image-students-news.png");
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+.image-text {
+  width: 80%;
+  height: 150px;
+  color: white;
+  padding: 20px;
+  background-color: #1c2e51;
+  position: absolute;
+  bottom: -80px;
+  z-index: 55;
+  border-radius: 8px;
+  font-size: 18px;
+}
+.image-text a {
+  float: right;
+  text-decoration: none;
+  color: #3db166;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.btn-show-detail {
+  background-color: #3db166;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 14px 60px;
+}
+
 .items {
   height: 100px;
   margin: 1.5rem;
+}
+.tabs-card {
+  border: 1px solid;
 }
 
 .image {
@@ -177,7 +348,6 @@ export default {
   padding: 20px 30px 20px 20px;
   border-radius: 16px;
   background-color: #1c2e51;
-  box-shadow: 0 4px 10px -2px rgb(215, 199, 210);
 }
 
 .btn-detail {
@@ -186,6 +356,7 @@ export default {
   display: inline;
   padding: 8px 10px;
   border: 1px solid #898588;
+  cursor: pointer;
 }
 .slide-left {
   width: 50px;
@@ -209,11 +380,12 @@ export default {
 }
 .tab-bar {
   display: flex;
+  margin-left: 70px;
 }
 
 .news-type {
   border: 1px solid #efebee;
-  padding: 5px 25px;
+  padding: 12px 48px;
   font-weight: 500;
   cursor: pointer;
   transition: background 0.4s ease;
@@ -221,9 +393,9 @@ export default {
 
 .news-type:hover {
   color: white;
-  background-color: #1c2e51;
+  background-color: #3db166;
 }
-
+/* 
 .news-card {
   border-radius: 30px;
   margin: 4rem 1rem;
@@ -247,7 +419,7 @@ export default {
   left: 50px;
   border-radius: 16px;
   bottom: -100px;
-}
+} */
 
 @media only screen and (max-width: 600px) {
   .image {

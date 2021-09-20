@@ -51,8 +51,15 @@
 
 <script>
 import pagination from "../components/pagination.vue";
+import { mapMutations } from "vuex";
 export default {
   components: { pagination },
+  methods: {
+    ...mapMutations("colors", ["setColor"]),
+  },
+  mounted() {
+    this.setColor(false);
+  },
 };
 </script>
 

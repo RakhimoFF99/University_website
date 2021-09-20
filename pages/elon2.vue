@@ -30,6 +30,7 @@
 import Imgcarousel from "../components/Imgcarousel.vue";
 import Navbar from "../components/Navbar.vue";
 import newsCard from "../components/newsCard.vue";
+import { mapMutations } from "vuex";
 export default {
   components: { Navbar, Imgcarousel, newsCard },
   data() {
@@ -43,6 +44,12 @@ export default {
       title: "Баҳор... Наврўз... Гўзаллик... Энг латиф",
       title1: "туйғулар бизнинг университетда меҳмон...",
     };
+  },
+  methods: {
+    ...mapMutations("colors", ["setColor"]),
+  },
+  mounted() {
+    this.setColor(false);
   },
 };
 </script>

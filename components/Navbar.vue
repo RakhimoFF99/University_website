@@ -11,7 +11,7 @@
       </div>
       <div v-if="ShowNavbar" ref="nav" class="navbar hide d-flex">
         <div class="navbar-list">
-          <div @click="toogleNavbar" class="nav-item d-flex">
+          <div :style="bg_color" @click="toogleNavbar" class="nav-item d-flex">
             <img
               src="@/assets/icons/fi_align-justify.svg"
               class="mb-1"
@@ -20,11 +20,11 @@
             <div class="ml-2" style="font-weight: 600">{{ $t("hlang") }}</div>
           </div>
 
-          <div @click="toogleNavbar" class="nav-item d-flex">
+          <div :style="bg_color" @click="toogleNavbar" class="nav-item d-flex">
             <img src="@/assets/icons/fi_search.svg" alt="search" />
             <div class="ml-2" style="font-weight: 600">{{ $t("hlang1") }}</div>
           </div>
-          <div @click="toogleNavbar" class="nav-item d-flex">
+          <div :style="bg_color" @click="toogleNavbar" class="nav-item d-flex">
             <img src="@/assets/icons/fi_calendar.svg" alt="calendar" />
             <div class="ml-2" style="font-weight: 600">{{ $t("hlang2") }}</div>
           </div>
@@ -48,51 +48,16 @@
 <script>
 export default {
   name: "Navbar",
-  data: () => ({
-    items: [
-      {
-        action: "local_activity",
-        title: "Attractions",
-        items: [{ title: "List Item" }],
-      },
-      {
-        action: "restaurant",
-        title: "Dining",
-        active: true,
-        items: [
-          { title: "Breakfast & brunch" },
-          { title: "New American" },
-          { title: "Sushi" },
-        ],
-      },
-      {
-        action: "school",
-        title: "Education",
-        items: [{ title: "List Item" }],
-      },
-      {
-        action: "directions_run",
-        title: "Family",
-        items: [{ title: "List Item" }],
-      },
-      {
-        action: "healing",
-        title: "Health",
-        items: [{ title: "List Item" }],
-      },
-      {
-        action: "content_cut",
-        title: "Office",
-        items: [{ title: "List Item" }],
-      },
-      {
-        action: "local_offer",
-        title: "Promotions",
-        items: [{ title: "List Item" }],
-      },
-    ],
-  }),
-  props: ["color", "ShowNavbar", "ShowMainLogo", "height", "title", "title1"],
+  data: () => ({}),
+  props: [
+    "color",
+    "ShowNavbar",
+    "ShowMainLogo",
+    "height",
+    "title",
+    "title1",
+    "bg_color",
+  ],
   methods: {
     toogleNavbar() {
       this.$refs.nav.classList.toggle("hide");
@@ -105,44 +70,6 @@ export default {
 </script>
 
 <style scoped>
-.background-image {
-  position: relative;
-  width: 100%;
-  background: url("@/assets/images/mainBodyImage.png") no-repeat center;
-  background-attachment: fixed;
-  background-size: cover;
-  overflow: hidden;
-}
-.color {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-color: #1c2e51cc;
-}
-.navbar {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  align-items: flex-start;
-  justify-content: flex-end;
-  transition: transform 0.7s ease;
-  position: relative;
-}
-.title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  color: white;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-.hide {
-  transform: translateX(300px);
-}
-
 .background-image {
   position: relative;
   width: 100%;

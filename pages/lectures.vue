@@ -182,6 +182,7 @@
 <script>
 import Navbar from "../components/Navbar.vue";
 import pagination from "../components/pagination.vue";
+import { mapMutations } from "vuex";
 export default {
   components: { pagination, Navbar },
   data() {
@@ -194,6 +195,12 @@ export default {
         height: "45vh",
       },
     };
+  },
+  methods: {
+    ...mapMutations("colors", ["setColor"]),
+  },
+  mounted() {
+    this.setColor(false);
   },
 };
 </script>
