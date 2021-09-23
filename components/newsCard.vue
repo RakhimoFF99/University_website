@@ -60,7 +60,7 @@ export default {
 }
 .image-text {
   width: 80%;
-  height: 150px;
+  /* height: 150px; */
   color: white;
   padding: 20px;
   background-color: #1c2e51;

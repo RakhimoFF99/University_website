@@ -6,17 +6,15 @@
       :color="navColor"
       :height="navHeight"
       :title="title"
+      :title1="title1"
     />
     <div class="container mt-5">
-      <div class="">
+      <div class="row">
         <div class="col-md-12 mt-3 text">
-          {{ $t("e'lon") }}
-          <br />
-          <br />
-          {{ $t("e'lon1") }}
+          {{ $t("elon2") }}
         </div>
         <div class="col-md-12 mt-3 image">
-          <img src="../assets/news/image25.png" alt="news" />
+          <img src="@/assets/image22.png" alt="news" />
         </div>
         <Imgcarousel :text="text" />
         <div class="new-text">
@@ -29,10 +27,10 @@
 </template>
 
 <script>
-import Imgcarousel from "../components/Imgcarousel.vue";
-import Navbar from "../components/Navbar.vue";
-import newsCard from "../components/newsCard.vue";
-import {mapMutations} from 'vuex'
+import Imgcarousel from "../../components/Imgcarousel.vue";
+import Navbar from "../../components/Navbar.vue";
+import newsCard from "../../components/newsCard.vue";
+import { mapMutations } from "vuex";
 export default {
   components: { Navbar, Imgcarousel, newsCard },
   data() {
@@ -43,16 +41,16 @@ export default {
       navHeight: {
         height: "30vh",
       },
-      text: true,
-      title: "Universitet jamoasi Umummxalq hayriya xasharida",
-    }
+      title: "Баҳор... Наврўз... Гўзаллик... Энг латиф",
+      title1: "туйғулар бизнинг университетда меҳмон...",
+    };
   },
-  methods:{
-      ...mapMutations('colors',['setColor'])
+  methods: {
+    ...mapMutations("colors", ["setColor"]),
   },
   mounted() {
-    this.setColor(false)
-  }
+    this.setColor(false);
+  },
 };
 </script>
 

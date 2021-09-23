@@ -2,7 +2,7 @@
   <div class="footer text-white bg-white">
     <section>
       <div class="container">
-        <div class="row brands my-3 d-flex justify-content-around">
+        <div class="row brands d-flex justify-content-around">
           <img src="@/assets/images/image-ziyonet.png" alt="ziyonet" />
           <img src="@/assets/images/image-mygov.png" alt="mygov" />
           <img src="@/assets/images/image-emblem.png" alt="emblem" />
@@ -18,7 +18,7 @@
             <div class="col-md-4">
               <img
                 class="footer-logo mb-4"
-                src="@/assets/images/footer-logo.png"
+                src="@/assets/icons/logo2.png"
                 alt="footerLogo"
               />
             </div>

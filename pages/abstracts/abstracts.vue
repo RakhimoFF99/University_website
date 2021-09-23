@@ -50,7 +50,7 @@
 </template>
 
 <script>
-import pagination from "../components/pagination.vue";
+import pagination from "../../components/pagination.vue";
 import { mapMutations } from "vuex";
 export default {
   components: { pagination },

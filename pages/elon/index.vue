@@ -6,15 +6,17 @@
       :color="navColor"
       :height="navHeight"
       :title="title"
-      :title1="title1"
     />
     <div class="container mt-5">
-      <div class="row">
+      <div class="">
         <div class="col-md-12 mt-3 text">
-          {{ $t("elon2") }}
+          {{ $t("e'lon") }}
+          <br />
+          <br />
+          {{ $t("e'lon1") }}
         </div>
         <div class="col-md-12 mt-3 image">
-          <img src="../assets/image22.png" alt="news" />
+          <img src="@/assets/news/image25.png" alt="news" />
         </div>
         <Imgcarousel :text="text" />
         <div class="new-text">
@@ -27,9 +29,9 @@
 </template>
 
 <script>
-import Imgcarousel from "../components/Imgcarousel.vue";
-import Navbar from "../components/Navbar.vue";
-import newsCard from "../components/newsCard.vue";
+import Imgcarousel from "../../components/Imgcarousel.vue";
+import Navbar from "../../components/Navbar.vue";
+import newsCard from "../../components/newsCard.vue";
 import { mapMutations } from "vuex";
 export default {
   components: { Navbar, Imgcarousel, newsCard },
@@ -41,8 +43,8 @@ export default {
       navHeight: {
         height: "30vh",
       },
-      title: "Баҳор... Наврўз... Гўзаллик... Энг латиф",
-      title1: "туйғулар бизнинг университетда меҳмон...",
+      text: true,
+      title: "Universitet jamoasi Umummxalq hayriya xasharida",
     };
   },
   methods: {

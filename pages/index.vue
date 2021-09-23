@@ -263,33 +263,36 @@ export default {
   color: white;
   background-color: #3db166;
 }
-/* 
-.news-card {
-  border-radius: 30px;
-  margin: 4rem 1rem;
-  position: relative;
+@media only screen and (max-width: 320px) {
+  .image {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 100px;
+    margin: 3rem 2rem 2rem 0;
+    background: url("@/assets/images/image-students.png") no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .image-border {
+    width: 0px;
+    height: 0px;
+  }
+  .image-detail {
+    font-size: 8px;
+    display: flex;
+    color: white;
+    left: 150px;
+    z-index: 11;
+    width: 100px;
+    height: 80px;
+    padding: 10px 20px 10px 10px;
+    border-radius: 5px;
+    background-color: #1c2e51;
+  }
 }
-.news-body {
-  width: 450px;
-  height: 300px;
-  background-image: url("@/assets/images/image-students-news.png");
-  background-repeat: no-repeat;
-  border-radius: 30px;
-}
-.news-text {
-  padding: 15px 20px;
-  width: 350px;
-  font-weight: 500;
-  height: 150px;
-
-  position: absolute;
-  background-color: #d7c7d2;
-  left: 50px;
-  border-radius: 16px;
-  bottom: -100px;
-} */
-
-@media only screen and (max-width: 600px) {
+@media (min-width: 321px) and (max-width: 700px) {
   .image {
     width: 300px;
     display: flex;
@@ -302,12 +305,8 @@ export default {
     background-position: center;
   }
   .image-border {
-    position: absolute;
-    z-index: 10;
-    width: 200px;
-    height: 200px;
-    border-radius: 16px;
-    border: 4px solid #85657c;
+    width: 0px;
+    height: 0px;
   }
   .image-detail {
     word-break: break-word;
@@ -324,7 +323,34 @@ export default {
     padding: 10px 20px 10px 10px;
     border-radius: 16px;
     background-color: #1c2e51;
-    box-shadow: 0 4px 10px -2px rgb(215, 199, 210);
+  }
+}
+@media (min-width: 701px) and (max-width: 900px) {
+  .image {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 400px;
+    margin: 3rem 2rem 2rem 0;
+    background: url("@/assets/images/image-students.png") no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .image-border {
+    width: 0px;
+    height: 0px;
+  }
+  .image-detail {
+    font-size: 10px;
+
+    left: 280px;
+    z-index: 11;
+    width: 50%;
+    height: 100px;
+    padding: 10px 20px 10px 10px;
+    border-radius: 16px;
+    background-color: #1c2e51;
   }
 }
 </style>

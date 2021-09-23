@@ -15,10 +15,10 @@
           </p>
         </div>
         <div class="news-images col-md-12 d-flex justify-content-center">
-          <img src="../assets/news/image22.png" alt="" />
+          <img src="@/assets/news/image22.png" alt="" />
         </div>
       </div>
-      <imgcarousel/>
+      <imgcarousel />
 
       <div class="new-text">
         <h1>{{ $t("newslang3") }}</h1>
@@ -30,9 +30,9 @@
 
 <script>
 import newsCard from "@/components/newsCard";
-import Navbar from "../components/Navbar.vue";
-import Imgcarousel from "../components/Imgcarousel.vue";
-import {mapMutations} from 'vuex'
+import Navbar from "@/components/Navbar.vue";
+import Imgcarousel from "@/components/Imgcarousel.vue";
+import { mapMutations } from "vuex";
 export default {
   components: {
     Navbar,
@@ -51,12 +51,12 @@ export default {
       title: "Munosabat",
     };
   },
-  methods:{
-      ...mapMutations('colors',['setColor'])
+  methods: {
+    ...mapMutations("colors", ["setColor"]),
   },
   mounted() {
-    this.setColor(false)
-  }
+    this.setColor(false);
+  },
 };
 </script>
 

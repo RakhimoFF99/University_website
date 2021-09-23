@@ -10,7 +10,7 @@
     <div class="container">
       <div class="row wars">
         <div class="col-md-12">
-          <img src="../assets/images/lecture-logo.png" alt="lect" />
+          <img src="@/assets/images/lecture-logo.png" alt="lect" />
         </div>
         <div class="col-md-12">
           <h1
@@ -180,8 +180,8 @@
 </template>
 
 <script>
-import Navbar from "../components/Navbar.vue";
-import pagination from "../components/pagination.vue";
+import Navbar from "../../components/Navbar.vue";
+import pagination from "../../components/pagination.vue";
 import { mapMutations } from "vuex";
 export default {
   components: { pagination, Navbar },
