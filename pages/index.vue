@@ -292,7 +292,7 @@ export default {
     background-color: #1c2e51;
   }
 }
-@media (min-width: 321px) and (max-width: 700px) {
+@media only screen and (max-width: 700px) {
   .image {
     width: 300px;
     display: flex;

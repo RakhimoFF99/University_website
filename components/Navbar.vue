@@ -12,20 +12,13 @@
       <div v-if="ShowNavbar" ref="nav" class="navbar hide d-flex">
         <div class="navbar-list">
           <div :style="bg_color" @click="toogleNavbar" class="nav-item d-flex">
-            <img
-              src="@/assets/icons/fi_align-justify.svg"
-              class="mb-1"
-              alt="menyu"
-            />
             <div class="ml-2" style="font-weight: 600">{{ $t("hlang") }}</div>
           </div>
 
           <div :style="bg_color" @click="toogleNavbar" class="nav-item d-flex">
-            <img src="@/assets/icons/fi_search.svg" alt="search" />
             <div class="ml-2" style="font-weight: 600">{{ $t("hlang1") }}</div>
           </div>
           <div :style="bg_color" @click="toogleNavbar" class="nav-item d-flex">
-            <img src="@/assets/icons/fi_calendar.svg" alt="calendar" />
             <div class="ml-2" style="font-weight: 600">{{ $t("hlang2") }}</div>
           </div>
           <div @click="toogleNavbar" class="nav-item smaller-nav d-flex">
