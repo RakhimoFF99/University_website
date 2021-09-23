@@ -2,7 +2,9 @@
   <div class="header-container" :style="color">
     <div class="container">
       <div class="row justify-content-between py-2">
+   
         <div class="col-md-8 m-0 p-0">
+            
           <div class="header-left d-flex">
             <img src="@/assets/icons/logo1.png" alt="logo" />
 
@@ -57,34 +59,34 @@
 
 <script>
 export default {
-  name: "Header",
-  data: () => {},
+  name: 'Header',
+  data: () => ({}),
   methods: {
-    clickUz() {
-      this.$i18n.setLocale("uz");
-      this.isRu = false;
+    clickUz () {
+      this.$i18n.setLocale('uz')
+      this.isRu = false
     },
-    clickRu() {
-      this.$i18n.setLocale("ru");
-      this.isUz = false;
+    clickRu () {
+      this.$i18n.setLocale('ru')
+      this.isUz = false
     },
-    clickEn() {
-      this.$i18n.setLocale("en");
-      this.isRu = false;
+    clickEn () {
+      this.$i18n.setLocale('en')
+      this.isRu = false
     },
-    showDropDown() {
-      this.$refs.drowdownContent.classList.toggle("show");
+    showDropDown () {
+      this.$refs.drowdownContent.classList.toggle('show')
     },
-    mounted() {
-      windows.addEventListener("click", (e) => {
-        if (e.target.className != "drowdown-content") {
-          this.$refs.drowdownContent.classList.remove("show");
+    mounted () {
+      windows.addEventListener('click', e => {
+        if (e.target.className != 'drowdown-content') {
+          this.$refs.drowdownContent.classList.remove('show')
         }
-      });
-    },
+      })
+    }
   },
-  props: ["color"],
-};
+  props: ['color']
+}
 </script>
 
 <style scoped>
