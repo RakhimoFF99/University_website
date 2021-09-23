@@ -26,6 +26,8 @@
           <a href="#"> {{ $t("indexlang2") }}</a>
         </div>
       </div>
+    </div>
+    <div class="shows-btn">
       <button class="btn-show-detail">{{ $t("bblang") }}</button>
     </div>
   </div>
@@ -44,7 +46,7 @@ export default {
   flex-wrap: wrap;
 }
 .image-news {
-  width: 500px;
+  width: 480px;
   height: 350px;
   margin: 10px;
   margin-bottom: 6rem;
@@ -81,5 +83,10 @@ export default {
   border-radius: 5px;
   color: #fff;
   padding: 14px 60px;
+}
+.shows-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
