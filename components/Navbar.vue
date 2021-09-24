@@ -12,13 +12,16 @@
       <div v-if="ShowNavbar" ref="nav" class="navbar hide d-flex">
         <div class="navbar-list">
           <div :style="bg_color" @click="toogleNavbar" class="nav-item d-flex">
+            <fa class="m-1" icon="align-justify" />
             <div class="ml-2" style="font-weight: 600">{{ $t("hlang") }}</div>
           </div>
 
           <div :style="bg_color" @click="toogleNavbar" class="nav-item d-flex">
+            <fa class="m-1" icon="search" />
             <div class="ml-2" style="font-weight: 600">{{ $t("hlang1") }}</div>
           </div>
           <div :style="bg_color" @click="toogleNavbar" class="nav-item d-flex">
+            <fa class="m-1" icon="calendar" />
             <div class="ml-2" style="font-weight: 600">{{ $t("hlang2") }}</div>
           </div>
           <div @click="toogleNavbar" class="nav-item smaller-nav d-flex">
@@ -75,7 +78,7 @@ export default {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: #1c2e51cc;
+  background-color: rgba(28, 46, 81, 0.7);
 }
 
 .title {
@@ -132,7 +135,7 @@ export default {
   cursor: pointer;
   margin-top: 10px;
   padding: 10px 10px;
-  background-color: #1c2e51;
+  background-color: rgba(28, 46, 81, 0.7);
   transition: background 0.5s ease;
 }
 .smaller-nav {

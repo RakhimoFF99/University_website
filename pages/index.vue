@@ -19,41 +19,19 @@
       </div>
     </div>
     <div class="container">
-      <div class="tab-bar">
-        <div id="app">
-          <v-app id="inspire">
-            <v-card style="box-shadow: none">
-              <v-tabs>
-                <v-tab> {{ $t("hlang2") }} </v-tab>
-                <v-tab> {{ $t("indexlang3") }} </v-tab>
-                <v-tab> {{ $t("indexlang4") }} </v-tab>
-
-                <v-tab-item>
-                  <v-card flat>
-                    <v-card-actions>
-                      <newsCard />
-                    </v-card-actions>
-                  </v-card>
-                </v-tab-item>
-                <v-tab-item>
-                  <v-card flat>
-                    <v-card-actions>
-                      <newsCard />
-                    </v-card-actions>
-                  </v-card>
-                </v-tab-item>
-                <v-tab-item>
-                  <v-card flat>
-                    <v-card-actions>
-                      <newsCard />
-                    </v-card-actions>
-                  </v-card>
-                </v-tab-item>
-              </v-tabs>
-            </v-card>
-          </v-app>
-        </div>
-      </div>
+      <b-card no-body style="box-shadow: none">
+        <b-tabs class="b-tabs" v-model="tabIndex">
+          <b-tab title="Yangiliklar" :title-link-class="linkClass(0)">
+            <NewsCard />
+          </b-tab>
+          <b-tab title="Tadbirlar" :title-link-class="linkClass(1)">
+            <NewsCard />
+          </b-tab>
+          <b-tab title="E'lonlar" :title-link-class="linkClass(2)">
+            <NewsCard />
+          </b-tab>
+        </b-tabs>
+      </b-card>
     </div>
     <section style="background-color: #1c2e51">
       <div
@@ -154,13 +132,18 @@ export default {
         height: "100vh",
       },
 
-      tab: null,
-      items: ["yangiliklar", "tadibirlar", "elonlar"],
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      tabIndex: 0,
     };
   },
   methods: {
     ...mapMutations("colors", ["setColor"]),
+    linkClass(idx) {
+      if (this.tabIndex === idx) {
+        return ["bg-success", "text-white", "px-4"];
+      } else {
+        return ["bg-white", "text-black", "px-4"];
+      }
+    },
   },
   mounted() {
     this.setColor(false);
@@ -169,6 +152,10 @@ export default {
 </script>
 
 <style scoped>
+.b-tabs {
+  background-color: white;
+  border-bottom: none;
+}
 .items {
   height: 100px;
   margin: 1.5rem;
