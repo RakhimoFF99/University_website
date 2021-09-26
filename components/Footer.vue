@@ -1,5 +1,5 @@
 <template>
-  <div class="footer text-white bg-white">
+  <div class="footer text-white">
     <section>
       <div class="container">
         <div class="row brands d-flex justify-content-around">
@@ -133,6 +133,8 @@ export default {
   top: auto;
   margin: 0;
   padding: 0;
+  background-color: white;
+  box-shadow: none;
 }
 .brands img {
   /* filter: grayscale(100%); */

@@ -35,7 +35,485 @@
           </div>
         </div>
 
-        <div class="navbar-box"></div>
+        <div class="navbar-box">
+          <div
+            class="box-scroll"
+            style="float: left; position: relative; left: 20px; top: 60px"
+          >
+            <table style="border: none">
+              <thead>
+                <tr>
+                  <th>
+                    <b-text
+                      v-b-toggle.collapse-1
+                      variant="white"
+                      style="color: white"
+                      >UNIVERSITET
+                    </b-text>
+                  </th>
+                  <th>
+                    <fa
+                      style="margin-left: 50px; font-size: 16px; color: white"
+                      icon="angle-down"
+                    />
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>
+                    <b-collapse id="collapse-1" class="mt-1 mb-1">
+                      <b-text>
+                        <nuxt-link
+                          to="#"
+                          class="card-text"
+                          style="color: white"
+                        >
+                          Universitet #1
+                        </nuxt-link>
+                      </b-text>
+                    </b-collapse>
+                  </th>
+                </tr>
+              </tbody>
+              <br />
+              <thead>
+                <tr>
+                  <th>
+                    <b-text
+                      v-b-toggle.collapse-2
+                      variant="white"
+                      style="color: white"
+                      >ABITURIENT
+                    </b-text>
+                  </th>
+                  <th>
+                    <fa
+                      style="margin-left: 50px; font-size: 16px; color: white"
+                      icon="angle-down"
+                    />
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>
+                    <b-collapse id="collapse-2" class="mt-1 mb-1">
+                      <b-text>
+                        <nuxt-link
+                          to="#"
+                          class="card-text"
+                          style="color: white"
+                        >
+                          Universitet #1
+                        </nuxt-link>
+                      </b-text>
+                    </b-collapse>
+                  </th>
+                </tr>
+              </tbody>
+              <br />
+              <thead>
+                <tr>
+                  <th>
+                    <b-text
+                      v-b-toggle.collapse-3
+                      variant="white"
+                      style="color: white"
+                      >FAOLIYAT
+                    </b-text>
+                  </th>
+                  <th>
+                    <fa
+                      style="margin-left: 50px; font-size: 16px; color: white"
+                      icon="angle-down"
+                    />
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>
+                    <b-collapse id="collapse-3" class="mt-1 mb-1">
+                      <b-text>
+                        <nuxt-link
+                          to="#"
+                          class="card-text"
+                          style="color: white"
+                        >
+                          Universitet #1
+                        </nuxt-link>
+                      </b-text>
+                    </b-collapse>
+                  </th>
+                </tr>
+              </tbody>
+              <br />
+              <thead>
+                <tr>
+                  <th>
+                    <b-text
+                      v-b-toggle.collapse-4
+                      variant="white"
+                      style="color: white"
+                      >TALABALAR
+                    </b-text>
+                  </th>
+                  <th>
+                    <fa
+                      style="margin-left: 50px; font-size: 16px; color: white"
+                      icon="angle-down"
+                    />
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>
+                    <b-collapse id="collapse-4" class="mt-1 mb-1">
+                      <b-text>
+                        <nuxt-link
+                          to="#"
+                          class="card-text"
+                          style="color: white"
+                        >
+                          Universitet #1
+                        </nuxt-link>
+                      </b-text>
+                    </b-collapse>
+                  </th>
+                </tr>
+              </tbody>
+              <br />
+              <thead>
+                <tr>
+                  <th>
+                    <b-text
+                      v-b-toggle.collapse-5
+                      variant="white"
+                      style="color: white"
+                      >XALQARO ALOQALAR
+                    </b-text>
+                  </th>
+                  <th>
+                    <fa
+                      style="margin-left: 50px; font-size: 16px; color: white"
+                      icon="angle-down"
+                    />
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>
+                    <b-collapse id="collapse-5" class="mt-1 mb-1">
+                      <b-text>
+                        <nuxt-link
+                          to="#"
+                          class="card-text"
+                          style="color: white"
+                        >
+                          Universitet #1
+                        </nuxt-link>
+                      </b-text>
+                    </b-collapse>
+                  </th>
+                </tr>
+              </tbody>
+              <br />
+              <thead>
+                <tr>
+                  <th>
+                    <b-text
+                      v-b-toggle.collapse-6
+                      variant="white"
+                      style="color: white"
+                      >INTERAKTIV XIZMATLAR
+                    </b-text>
+                  </th>
+                  <th>
+                    <fa
+                      style="margin-left: 50px; font-size: 16px; color: white"
+                      icon="angle-down"
+                    />
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>
+                    <b-collapse id="collapse-6" class="mt-1 mb-1">
+                      <b-text>
+                        <nuxt-link
+                          to="#"
+                          class="card-text"
+                          style="color: white"
+                        >
+                          Universitet #1
+                        </nuxt-link>
+                      </b-text>
+                    </b-collapse>
+                  </th>
+                </tr>
+              </tbody>
+              <br />
+              <thead>
+                <tr>
+                  <th>
+                    <b-text
+                      v-b-toggle.collapse-7
+                      variant="white"
+                      style="color: white"
+                      >HUJJATLAR
+                    </b-text>
+                  </th>
+                  <th>
+                    <fa
+                      style="margin-left: 50px; font-size: 16px; color: white"
+                      icon="angle-down"
+                    />
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>
+                    <b-collapse id="collapse-7" class="mt-1 mb-1">
+                      <b-text>
+                        <nuxt-link
+                          to="#"
+                          class="card-text"
+                          style="color: white"
+                        >
+                          Universitet #1
+                        </nuxt-link>
+                      </b-text>
+                    </b-collapse>
+                  </th>
+                </tr>
+              </tbody>
+              <br />
+              <thead>
+                <tr>
+                  <th>
+                    <b-text
+                      v-b-toggle.collapse-8
+                      variant="white"
+                      style="color: white"
+                      >QABUL 2021
+                    </b-text>
+                  </th>
+                  <th>
+                    <fa
+                      style="margin-left: 50px; font-size: 16px; color: white"
+                      icon="angle-down"
+                    />
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>
+                    <b-collapse id="collapse-8" class="mt-1 mb-1">
+                      <b-text>
+                        <nuxt-link
+                          to="#"
+                          class="card-text"
+                          style="color: white"
+                        >
+                          Universitet #1
+                        </nuxt-link>
+                      </b-text>
+                    </b-collapse>
+                  </th>
+                </tr>
+              </tbody>
+              <br />
+              <thead>
+                <tr>
+                  <th>
+                    <b-text
+                      v-b-toggle.collapse-9
+                      variant="white"
+                      style="color: white"
+                      >KORRUPSIYAGA QARSHI
+                    </b-text>
+                  </th>
+                  <th>
+                    <fa
+                      style="margin-left: 50px; font-size: 16px; color: white"
+                      icon="angle-down"
+                    />
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>
+                    <b-collapse id="collapse-9" class="mt-1 mb-1">
+                      <b-text>
+                        <nuxt-link
+                          to="#"
+                          class="card-text"
+                          style="color: white"
+                        >
+                          Universitet #1
+                        </nuxt-link>
+                      </b-text>
+                    </b-collapse>
+                  </th>
+                </tr>
+              </tbody>
+              <br />
+              <thead>
+                <tr>
+                  <th>
+                    <b-text
+                      v-b-toggle.collapse-10
+                      variant="white"
+                      style="color: white"
+                      >YOSHLAR BILAN ISHLASH
+                    </b-text>
+                  </th>
+                  <th>
+                    <fa
+                      style="margin-left: 50px; font-size: 16px; color: white"
+                      icon="angle-down"
+                    />
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>
+                    <b-collapse id="collapse-10" class="mt-1 mb-1">
+                      <b-text>
+                        <nuxt-link
+                          to="#"
+                          class="card-text"
+                          style="color: white"
+                        >
+                          Universitet #1
+                        </nuxt-link>
+                      </b-text>
+                    </b-collapse>
+                  </th>
+                </tr>
+              </tbody>
+              <br />
+              <thead>
+                <tr>
+                  <th>
+                    <b-text
+                      v-b-toggle.collapse-11
+                      variant="white"
+                      style="color: white"
+                      >ELEKTRON IMZO
+                    </b-text>
+                  </th>
+                  <th>
+                    <fa
+                      style="margin-left: 50px; font-size: 16px; color: white"
+                      icon="angle-down"
+                    />
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>
+                    <b-collapse id="collapse-11" class="mt-1 mb-1">
+                      <b-text>
+                        <nuxt-link
+                          to="#"
+                          class="card-text"
+                          style="color: white"
+                        >
+                          Universitet #1
+                        </nuxt-link>
+                      </b-text>
+                    </b-collapse>
+                  </th>
+                </tr>
+              </tbody>
+              <br />
+              <thead>
+                <tr>
+                  <th>
+                    <b-text
+                      v-b-toggle.collapse-12
+                      variant="white"
+                      style="color: white"
+                      >ALOQA
+                    </b-text>
+                  </th>
+                  <th>
+                    <fa
+                      style="margin-left: 50px; font-size: 16px; color: white"
+                      icon="angle-down"
+                    />
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>
+                    <b-collapse id="collapse-12" class="mt-1 mb-1">
+                      <b-text>
+                        <nuxt-link
+                          to="#"
+                          class="card-text"
+                          style="color: white"
+                        >
+                          Universitet #1
+                        </nuxt-link>
+                      </b-text>
+                    </b-collapse>
+                  </th>
+                </tr>
+              </tbody>
+              <br />
+              <thead>
+                <tr>
+                  <th>
+                    <b-text
+                      v-b-toggle.collapse-13
+                      variant="white"
+                      style="color: white"
+                      >O'QUV TURLARI
+                    </b-text>
+                  </th>
+                  <th>
+                    <fa
+                      style="margin-left: 50px; font-size: 16px; color: white"
+                      icon="angle-down"
+                    />
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>
+                    <b-collapse id="collapse-13" class="mt-1 mb-1">
+                      <b-text>
+                        <nuxt-link
+                          to="#"
+                          class="card-text"
+                          style="color: white"
+                        >
+                          Universitet #1
+                        </nuxt-link>
+                      </b-text>
+                    </b-collapse>
+                  </th>
+                </tr>
+              </tbody>
+              <br />
+            </table>
+
+            <br />
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -66,6 +544,10 @@ export default {
 </script>
 
 <style scoped>
+.table {
+  list-style: none;
+  text-decoration: none;
+}
 .background-image {
   position: relative;
   width: 100%;
@@ -125,9 +607,15 @@ export default {
   height: 100vh;
   background-color: #000000e0;
 }
-.navbar-box {
-  display: flex;
-  justify-content: center;
+.box-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+.box-scroll::-webkit-scrollbar-track {
+  background-color: #626262;
+}
+.box-scroll::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 8px;
 }
 
 .nav-item {
