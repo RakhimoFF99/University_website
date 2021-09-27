@@ -8,34 +8,48 @@
           </div>
           <div class="col-md-11 justify-content-between">
             <ul class="d-flex nav mt-4">
-              <li><nuxt-link to="#">ABOUT US</nuxt-link></li>
               <li>
-                <nuxt-link to="#"> ADDMISSION </nuxt-link>
+                <nuxt-link to="#">{{ $t("about us") }}</nuxt-link>
               </li>
               <li>
-                <nuxt-link to="#"> GRANTS </nuxt-link>
+                <nuxt-link to="#"> {{ $t("addmission") }} </nuxt-link>
               </li>
               <li>
-                <nuxt-link to="#"> VISITS </nuxt-link>
+                <nuxt-link to="#"> {{ $t("grants") }} </nuxt-link>
               </li>
               <li>
-                <nuxt-link to="#"> FOREIGNERS </nuxt-link>
+                <nuxt-link to="#"> {{ $t("visits") }} </nuxt-link>
               </li>
               <li>
-                <nuxt-link to="#"> EXCHANGE </nuxt-link>
+                <nuxt-link to="#"> {{ $t("foreigners") }} </nuxt-link>
               </li>
               <li>
-                <nuxt-link to="#"> PARTNERS </nuxt-link>
+                <nuxt-link to="#">{{ $t("exchange") }} </nuxt-link>
               </li>
               <li>
-                <nuxt-link to="#"> STAFF MEMBERS </nuxt-link>
+                <nuxt-link to="#"> {{ $t("partners") }} </nuxt-link>
               </li>
-              <nuxt-link class="ml-5" to="#">
+              <li>
+                <nuxt-link to="#"> {{ $t("s-members") }} </nuxt-link>
+              </li>
+              <nuxt-link class="ml-5 mr-5 icon-img" to="#">
                 <img src="@/assets/icons/fi_phone.png" alt="" />
               </nuxt-link>
-              <nuxt-link class="ml-5" to="#">
-                <img src="@/assets/icons/fi_globe.png" alt="" />
-              </nuxt-link>
+
+              <div @click="showDropDown" class="dropdown icon-img">
+                <img
+                  class="icon-style"
+                  src="@/assets/icons/fi_globe.png"
+                  alt="globes"
+                />
+                <div ref="drowdownContent" class="dropdown-content">
+                  <ul>
+                    <li><a @click.prevent="clickUz" href="/uz">Uz</a></li>
+                    <li><a @click.prevent="clickRu" href="/ru">Ru</a></li>
+                    <li><a @click.prevent="clickEn" href="/en">En</a></li>
+                  </ul>
+                </div>
+              </div>
             </ul>
           </div>
         </div>
@@ -46,7 +60,25 @@
 
 
 <script>
-export default {};
+export default {
+  methods: {
+    clickUz() {
+      this.$i18n.setLocale("uz");
+      this.isRu = false;
+    },
+    clickRu() {
+      this.$i18n.setLocale("ru");
+      this.isUz = false;
+    },
+    clickEn() {
+      this.$i18n.setLocale("en");
+      this.isRu = false;
+    },
+    showDropDown() {
+      this.$refs.drowdownContent.classList.toggle("show");
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -66,5 +98,43 @@ export default {};
 .nav li a {
   padding: 0 15px;
   color: white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.dropdown-content {
+  position: absolute;
+  display: none;
+  top: 30px;
+  right: -50px;
+  background-color: #1c2e51cc;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  padding: 12px 16px;
+  z-index: 1;
+}
+.show {
+  display: block;
+}
+.dropdown-content ul li a {
+  color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    margin-left: 20px;
+  }
+  .nav li {
+    display: none;
+  }
+  .icon-img {
+    position: relative;
+    top: -90px;
+    left: 250px;
+  }
 }
 </style>

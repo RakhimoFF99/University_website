@@ -12,14 +12,16 @@
           <div class="slide-left"></div>
         </div>
         <div class="image-detail">
-          {{ $t("indexlang") }}
+          <h3 style="color: white; padding: 0px 32px 0 32px">
+            {{ $t("indexlang") }}
+          </h3>
           <div class="slide-right"></div>
           <div class="btn-detail">{{ $t("indexlang2") }}</div>
         </div>
       </div>
     </div>
     <div class="container">
-      <b-card no-body style="box-shadow: none">
+      <b-card no-body style="box-shadow: none; margin-top: 80px">
         <b-tabs class="b-tabs" v-model="tabIndex">
           <b-tab title="Yangiliklar" :title-link-class="linkClass(0)">
             <NewsCard />
@@ -129,7 +131,7 @@ export default {
       isShowNews: true,
       title: "",
       navHeight: {
-        height: "100vh",
+        height: "680px",
       },
 
       tabIndex: 0,
@@ -165,11 +167,13 @@ export default {
 }
 
 .image {
-  width: 700px;
+  width: 750px;
   display: flex;
   align-items: center;
   position: relative;
-  height: 400px;
+  left: 48px;
+  top: 50px;
+  height: 500px;
   margin: 3rem 2rem 2rem 0;
   background: url("@/assets/images/image-students.png") no-repeat;
   background-size: contain;
@@ -180,9 +184,10 @@ export default {
   display: flex;
   align-items: center;
   position: absolute;
+  left: -48px;
   z-index: 10;
-  width: 700px;
-  height: 300px;
+  width: 850px;
+  height: 400px;
   border-radius: 16px;
   border: 4px solid #1c2e51;
 }
@@ -197,19 +202,20 @@ export default {
   flex-direction: column;
   position: absolute;
   z-index: 11;
-  right: -200px;
-  width: 50%;
+  right: -350px;
+  width: 486px;
+  height: 304px;
   min-height: 200px;
   padding: 20px 30px 20px 20px;
   border-radius: 16px;
   background-color: #1c2e51;
 }
-
 .btn-detail {
   float: right;
   margin-top: 20px;
   display: inline;
-  padding: 8px 10px;
+  font-size: 16px;
+  padding: 10px 20px;
   border: 1px solid #898588;
   cursor: pointer;
 }

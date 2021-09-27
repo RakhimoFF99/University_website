@@ -11,9 +11,9 @@
           </span>
         </div>
         <div class="slider-text">
-          <h5 style="color: white">NEWS</h5>
+          <h5 style="color: white">{{ $t("hlang2") }}</h5>
           <h1 style="color: white; font-weight: 700; font-size: 48px">
-            SCOLARSHIP FOR STUDY IN SIMONS UNIVERSITY, THE USA
+            {{ $t("scolarship") }}
           </h1>
           <p style="color: white; font-weight: 500; margin-top: -10px">
             Oleg Kim <span class="mx-3">|</span> August 25 2021
@@ -27,7 +27,7 @@
           <img src="@/assets/partnership/image34.png" alt="" />
           <div class="elem-text pl-3">
             <h4 style="color: #000000; font-weight: 600; font-size: 20px">
-              MEETING WITH A QUALIFIED U.S. PROFESSIONAL
+              {{ $t("meeting") }}
             </h4>
             <p
               style="
@@ -42,9 +42,7 @@
             </p>
             <hr style="border-bottom: 2px solid #3db166; width: 64px" />
             <p style="font-weight: 400; font-size: 14px; padding-bottom: 0">
-              On September 10, 2021, a meeting was held at the Uzbek State
-              University of World Languages ​ with Jadson Wright, an English
-              language specialist sent to teachon a grant from…
+              {{ $t("m-text") }}
             </p>
           </div>
         </div>
@@ -52,16 +50,14 @@
           <img src="@/assets/partnership/image 32.png" alt="" />
           <div class="elem-text">
             <h4 style="color: #000000; font-weight: 600; font-size: 20px">
-              “GLOBAL LEADERS CONFERENCE” MODEL UN
+              {{ $t("global") }}
             </h4>
             <p style="opacity: 60%; font-weight: 400; font-size: 14px">
               September 10, 2021
             </p>
             <hr style="border-bottom: 2px solid #3db166; width: 64px" />
             <p style="font-weight: 400; font-size: 14px; padding-bottom: 0">
-              Keep strengthening your CV! Benefits of the conference:
-              ▪️International certificate ▪️Truly International atmosphere
-              ▪️Understanding the work of UN ▪️Developing soft skills…
+              {{ $t("g-text") }}
             </p>
           </div>
         </div>
@@ -69,7 +65,9 @@
       <div class="row mt-5">
         <div class="col-md-6">
           <div class="text">
-            <h4 style="font-weight: 600; font-size: 24px">Categories</h4>
+            <h4 style="font-weight: 600; font-size: 24px">
+              {{ $t("Categories") }}
+            </h4>
           </div>
         </div>
         <div class="col-md-4">
@@ -102,40 +100,40 @@
       </div>
       <div class="nav2">
         <ul>
-          <li><a class="nav-link" href="#">Interviews</a></li>
-          <li><a class="nav-link" href="#">Job offers</a></li>
-          <li><a class="nav-link" href="#">News</a></li>
-          <li><a class="nav-link" href="#">Scholarships</a></li>
-          <li><a class="nav-link" href="#">Visits</a></li>
+          <li>
+            <a class="nav-link" href="#">{{ $t("Interviews") }}</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#">{{ $t("Job offers") }}</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#">{{ $t("hlang2") }}</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#">{{ $t("Scholarships2") }}</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#">{{ $t("visits") }}</a>
+          </li>
         </ul>
-        <!-- <hr
-          style="
-            border-bottom: 2px solid #3db166;
-            width: 80px;
-            margin-left: 45px;
-          "
-        /> -->
       </div>
       <div class="row mt-5">
-        <div class="col-md-12 d-flex">
+        <div class="col-md-12 d-flex column">
           <img src="@/assets/partnership/image 35.png" alt="" />
           <div class="text-b ml-3">
             <h2 style="font-size: 32px; font-weight: 600; color: black">
-              Осиё тараққиёт банкида (ОТБ) стажировка тақдим этилади
+              {{ $t("stajirovka") }}
             </h2>
             <p style="color: black; font-weight: 500; font-size: 16px">
-              Муддати: 2021 йил 15 сентябрь
+              {{ $t("muddati") }} 2021 {{ $t("yil") }} 15 {{ $t("oy") }}
             </p>
             <hr style="border-bottom: 2px solid #3db166; width: 146px" />
             <p style="font-weight: 500">
-              Осиё тараққиёт банки магистрант ва аспирантлар учун стажёр
-              сифатида ишлашга таклиф қилади. Стажёрлар ОТБ эҳтиёжларидан келиб
-              чиққан ҳолда тадқиқот топшириқларини бажариш орқали керакли
-              тажрибага эга бўлиб, муайян лойиҳалар устида ишлайдилар.
+              {{ $t("st-text") }}
             </p>
           </div>
         </div>
-        <div class="col-md-12 d-flex mb-3">
+        <div class="col-md-12 d-flex mb-3 column">
           <img src="@/assets/partnership/image 36.png" alt="" />
           <div class="text-b ml-3">
             <h2 style="font-size: 32px; font-weight: 600; color: black">
@@ -215,4 +213,29 @@ export default {
   color: black;
   font-weight: 500;
 }
+@media only screen and (max-width: 600px) {
+  .col-md-4 input {
+    width: 296px;
+    height: 38px;
+  }
+  .button-search {
+    background: #1e73be;
+    width: 38px;
+    height: 38px;
+    position: relative;
+    left: 400px;
+    top: 0px;
+  }
+
+  .slider-text {
+    margin-top: 80px;
+  }
+
+  .nav2 ul li .nav-link {
+    margin: 0 10px 0 0;
+  }
+  .column img {
+    width: 220px;
+  }
+} ;
 </style>
