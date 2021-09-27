@@ -83,5 +83,7 @@ export default {
      "yil": "йил",
      "oy": "сентябрь",
      "st-text": "Осиё тараққиёт банки магистрант ва аспирантлар учун стажёр сифатида ишлашга таклиф қилади. Стажёрлар ОТБ эҳтиёжларидан келиб чиққан ҳолда тадқиқот топшириқларини бажариш орқали керакли тажрибага эга бўлиб, муайян лойиҳалар устида ишлайдилар.",
-
+     "conferens": "ONLINE KONFERANSI “XORIJIY TILLARNI O'RGATISH STRATEGIYALARI. PANDEMIKA »2021 yil 16 -APRELDA BOSHQARILADI",
+     "cont-text": "Respublika ilmiy -amaliy markazi tashabbusi bilan chet tilini o'qitishning innovatsion usullarini ishlab chiqish uchun O'zDJTU tillari Tsukuba universiteti bilan hamkorlikda ...",
+     "footer-t": "O'zDJTU xalqaro aloqalar bo'limi"
 }

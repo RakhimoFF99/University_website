@@ -137,17 +137,14 @@
           <img src="@/assets/partnership/image 36.png" alt="" />
           <div class="text-b ml-3">
             <h2 style="font-size: 32px; font-weight: 600; color: black">
-              ONLINE CONFERENCE “STRATEGIES IN TEACHING FOREIGN LANGUAGES DURING
-              THE PANDEMIC” WILL BE HELD ON APRIL 16, 2021
+              {{ $t("conferens") }}
             </h2>
             <p style="color: black; font-weight: 500; font-size: 16px">
-              Муддати: 2021 йил 15 сентябрь
+              {{ $t("muddati") }} 2021 {{ $t("yil") }} 15 {{ $t("oy") }}
             </p>
             <hr style="border-bottom: 2px solid #3db166; width: 146px" />
             <p style="font-weight: 500">
-              At the initiative of the Republican Scientific – Practical Center
-              for the Development of Innovative Methods of Teaching Foreign
-              Languages at UzSWLU in collaboration with Tsukuba University of...
+              {{ $t("cont-text") }}
             </p>
           </div>
         </div>

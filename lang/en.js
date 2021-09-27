@@ -83,4 +83,7 @@ export default {
      "yil": "year",
      "oy": "September",
      "st-text": "The Asian Development Bank is an intern for undergraduate and graduate students offers to work as. Interns come from ADB needs required by completing research assignments on the go have experience and work on specific projects.",
+     "conferens": "ONLINE CONFERENCE “STRATEGIES IN TEACHING FOREIGN LANGUAGES DURING THE PANDEMIC” WILL BE HELD ON APRIL 16, 2021",
+     "cont-text": "At the initiative of the Republican Scientific – Practical Center for the Development of Innovative Methods of Teaching Foreign Languages at UzSWLU in collaboration with Tsukuba University of...",
+     "footer-t": "UzSWLU International Relations Department"
 }

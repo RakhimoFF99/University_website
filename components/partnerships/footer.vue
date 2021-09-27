@@ -73,7 +73,7 @@
       </div>
       <hr style="background: white" />
       <div style="color: white" class="container py-2">
-        2021 - UzSWLU International Relations Department
+        2021 - {{ $t("footer-t") }}
       </div>
     </div>
   </div>
