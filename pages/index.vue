@@ -154,10 +154,6 @@ export default {
 </script>
 
 <style scoped>
-.b-tabs {
-  background-color: white;
-  border-bottom: none;
-}
 .items {
   height: 100px;
   margin: 1.5rem;

@@ -209,7 +209,7 @@
                     <b-collapse id="collapse-5" class="mt-1 mb-1">
                       <b-text>
                         <nuxt-link
-                          to="#"
+                          to="/partnership"
                           class="card-text"
                           style="color: white"
                         >
@@ -501,7 +501,18 @@
                           class="card-text"
                           style="color: white"
                         >
-                          Universitet #1
+                          <div class="" style="color: rgba(255, 255, 255, 0.6)">
+                            <fa style="font-size: 18px" icon="envelope" />
+                            <span class="ml-3">Korparativ Pochta</span>
+                          </div>
+                          <div class="" style="color: rgba(255, 255, 255, 0.6)">
+                            <img
+                              style="width: 18px; height: 18px"
+                              src="@/assets/icons/Vector-s.png"
+                              alt=""
+                            />
+                            <span class="ml-3">Kredit modul tizimi</span>
+                          </div>
                         </nuxt-link>
                       </b-text>
                     </b-collapse>
